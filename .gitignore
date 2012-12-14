@@ -1,3 +1,6 @@
+*.db
+obj
+bin
 *.suo
 *.user
 *.orig
