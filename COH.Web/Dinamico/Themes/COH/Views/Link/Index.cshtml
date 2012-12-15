@@ -1,0 +1,15 @@
+﻿@model string[]
+
+@section belowNavigation {
+
+    <div class="row-fluid">
+        <div class="span3" style="margin-bottom: 1em;">
+            @{ Html.RenderPartial("_SubNavigation"); }
+        </div>
+        <div class="span9" style="background: #fff;">
+            <h1>Redirect</h1>
+            <p>Redirecting to <a href="@Model[0]">@Model[0]</a></p>
+        </div>
+    </div>
+
+}

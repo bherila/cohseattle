@@ -1,0 +1,20 @@
+﻿@model Dinamico.Models.DocumentViewer
+
+@section belowNavigation {
+
+    <div class="row-fluid">
+        <div class="span3" style="margin-bottom: 1em;">
+            @{ Html.RenderPartial("_SubNavigation"); }
+        </div>
+        <div class="span9" style="background: #fff;">
+           <div class="alert alert-info">The requested document is displayed below. You can also <a href="@Model.Attachment">download a copy</a>.
+           </div>
+
+            <div>
+                <iframe src="http://docs.google.com/viewer?embedded=true&url=http://www.middlesexwater.com/@Model.Attachment" width="100%" height="600"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+}

@@ -1,0 +1,26 @@
+﻿@gridColumnWidth
+70px
+
+@gridGutterWidth
+10px
+
+@gridColumnWidth1200
+90px
+
+@gridGutterWidth1200
+10px
+
+@gridColumnWidth768
+52px
+
+@gridGutterWidth768
+10px
+
+@linkColor
+#004383
+
+@linkColorHover
+#08c
+
+@sansFontFamily
+'Source Sans Pro', Arial, Helvetica, sans-serif

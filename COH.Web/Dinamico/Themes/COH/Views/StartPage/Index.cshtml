@@ -1,0 +1,23 @@
+﻿@model Dinamico.Models.StartPage
+           
+@section head {
+    <script src="/static/slideshow.js" type="text/javascript"></script>
+    @{ Html.Resources().JavaScript(Url.ThemedContent("~/Content/rslides.js")); }
+    @{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/rslides.css")); }
+    <script type="text/javascript">
+        function resizeSlideshow() { $("#ss_span").height($("#sx_span").height() - 3); }
+        $(window).resize(resizeSlideshow);
+        $(document).ready(resizeSlideshow);
+    </script>
+}
+
+
+@section main {
+    <div class="span8">
+        
+        @Content.Render.Tokens("Text").Wrap(@<div id="content">@item.RenderContents()</div>)
+
+        @{ Html.DroppableZone("Body").Render(); }
+
+    </div>
+}

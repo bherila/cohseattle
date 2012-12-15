@@ -1,0 +1,21 @@
+﻿@{ 
+    var ChildItems = Content.Traverse.ChildPages(Content.Current.Page).ToList();
+    if (ChildItems.Count == 0) {
+        // this item has no children so add its sibilings 
+        var parent = Content.Traverse.PageParent();
+        ChildItems.Add(parent);
+        ChildItems.AddRange(Content.Traverse.ChildPages(parent));
+    }
+    else {
+        ChildItems.Insert(0, Content.Current.Page);   
+    }
+    
+}
+
+<!-- Sub-navigation -->
+<div class="subNav">
+@foreach (var ci in ChildItems) {
+    if (ci.ID == Content.Current.Page.ID) { <p class="selected">@ci.Title</p> }
+    else { <a href="@ci.Url">@ci.Title</a> }
+}
+</div>

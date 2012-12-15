@@ -1,0 +1,19 @@
+﻿body, html
+{
+	background-color: #eee;
+	background-repeat: repeat-x;
+	margin: 0px;
+}
+
+h1 { font-size: 18pt; font-weight: 600; color: #004383; }
+h1, h2, h3, h4, h5, h6 { line-height: 1em; }
+h2, h3, h4, h5, h6 { font-size: 12pt !important; margin-bottom: 0.25em !important; }
+p, li { margin-bottom: 0.9em; }
+
+.no-pad { padding: 0; }
+
+.container { background-color: #fff; padding: 1em 2.5em; }
+
+.span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10 { background: #eee; }
+
+.row { margin-bottom: 0.8em; }
