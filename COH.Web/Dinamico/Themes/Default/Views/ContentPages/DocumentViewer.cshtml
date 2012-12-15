@@ -1,0 +1,17 @@
+﻿@model Dinamico.Models.ContentPage
+
+@{
+	Content.Define(re => 
+	{
+		re.Title = "Document Host";
+        re.FileUpload("Attachment");
+	});
+}
+
+@section page {
+
+    @Content.Render.Tokens("Title").Wrap(@<h1>@item.RenderContents()</h1>)
+
+    @Content.Render.Tokens("Text").Wrap(@<div id="content">@item.RenderContents()</div>)
+
+}

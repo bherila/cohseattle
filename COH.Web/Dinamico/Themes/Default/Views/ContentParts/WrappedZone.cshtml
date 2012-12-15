@@ -1,0 +1,13 @@
+﻿@model Dinamico.Models.ContentPart
+@{ 
+    Content.Define(re =>
+       {
+           re.Title = "Wrapped Zone";
+           re.Text("HeaderHtml").Configure(foo => { foo.TextMode = System.Web.UI.WebControls.TextBoxMode.MultiLine; foo.Columns = 50; foo.Rows = 5; });
+           re.Text("FooterHtml").Configure(foo => { foo.TextMode = System.Web.UI.WebControls.TextBoxMode.MultiLine; foo.Columns = 50; foo.Rows = 5; });
+       }
+    );
+}
+@Html.Raw(Content.Data.HeaderHtml)
+<div>@{ Html.DroppableZone("Content").Render(); }</div>
+@Html.Raw(Content.Data.FooterHtml)
