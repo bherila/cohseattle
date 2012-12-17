@@ -139,30 +139,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="code\Enums.cs" />
-    <Compile Include="code\ErrorReport.cs" />
-    <Compile Include="code\FileSystemDataImpl.cs" />
-    <Compile Include="code\Helpers.cs" />
-    <Compile Include="code\Markdown.cs" />
-    <Compile Include="code\Model.Designer.cs">
-      <DependentUpon>Model.edmx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="code\Time.cs" />
-    <Compile Include="CustomerDataService.svc.cs">
-      <DependentUpon>CustomerDataService.svc</DependentUpon>
-    </Compile>
-    <Compile Include="Data\FileSystemData.cs">
-      <DependentUpon>FileSystemData.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Data\FileSystemData.Designer.cs">
-      <DependentUpon>FileSystemData.xsd</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Controllers\CustUpdateController.cs" />
     <Compile Include="Dinamico\Controllers\ContentPagesController.cs" />
     <Compile Include="Dinamico\Controllers\ContentPartsController.cs" />
     <Compile Include="Dinamico\Controllers\DocumentViewerController.cs" />
@@ -187,36 +163,14 @@
     <Compile Include="Dinamico\Models\StartPage.cs" />
     <Compile Include="Dinamico\Registrations\FreeFormRegistration.cs" />
     <Compile Include="Dinamico\Registrations\StartPageRegistration.cs" />
-    <Compile Include="ICustomerDataService.cs" />
-    <Compile Include="Models\CompanyPage.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CustUpdate.cs" />
+    <Compile Include="MWMvc.Float.cs" />
+    <Compile Include="Models\BootstrapPart.cs" />
     <Compile Include="Models\RawHtml.cs" />
-    <Compile Include="Models\StockTicker.cs" />
     <Compile Include="Models\Tile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="share\html\ContentTemplate.master.cs">
-      <DependentUpon>ContentTemplate.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="share\html\Family\Navigation.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebParts\HeaderStockPrice.ascx.cs">
-      <DependentUpon>HeaderStockPrice.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebParts\Homepage\NewsFeed.ascx.cs">
-      <DependentUpon>NewsFeed.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebParts\Homepage\NewsFeed.ascx.designer.cs">
-      <DependentUpon>NewsFeed.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="WebParts\SNLContent.cs" />
-    <Compile Include="WebParts\SNLQuote.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="apple-touch-icon.png" />
@@ -227,18 +181,10 @@
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\bootstrap\img\glyphicons-halflings-white.png" />
     <Content Include="Content\bootstrap\img\glyphicons-halflings.png" />
-    <Content Include="Content\Devexpress.css" />
-    <Content Include="Content\Devexpress.js" />
-    <Content Include="CustomerDataService.svc" />
+    <Content Include="Content\slides.jquery.js" />
+    <Content Include="Content\slides.min.jquery.js" />
     <Content Include="Dinamico\N2\readme.txt" />
     <Content Include="Dinamico\readme.txt" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Elements.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\fade.png" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\home.png" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Thumbnail.JPG" />
     <Content Include="Dinamico\Themes\COH\Content\bootstrap_params.txt" />
     <Content Include="Dinamico\Themes\COH\Content\rslides.js" />
     <Content Include="Dinamico\Themes\COH\Content\style.css" />
@@ -248,10 +194,6 @@
     <Content Include="Dinamico\Themes\COH\Content\img\glyphicons-halflings.png" />
     <Content Include="Dinamico\Themes\COH\Content\js\bootstrap.js" />
     <Content Include="Dinamico\Themes\COH\Content\js\bootstrap.min.js" />
-    <Content Include="Dinamico\Themes\Concrete\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Concrete\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Concrete\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Concrete\Thumbnail.JPG" />
     <Content Include="Dinamico\Themes\Dark\Content\Elements.css" />
     <Content Include="Dinamico\Themes\Dark\Content\Layout.css" />
     <Content Include="Dinamico\Themes\Dark\Content\Mood.css" />
@@ -311,194 +253,6 @@
     <Content Include="N2\license.txt" />
     <Content Include="N2\n2_readme.txt" />
     <Content Include="N2\upgrade.txt" />
-    <Content Include="ServiceTest.aspx" />
-    <Content Include="share\Default.aspx" />
-    <Content Include="share\files\water-system-tap-back-1.swf" />
-    <Content Include="share\html\About\Default.aspx" />
-    <Content Include="share\html\About\Legal_Disclaimer.aspx" />
-    <Content Include="share\html\About\Privacy_Policy.aspx" />
-    <Content Include="share\html\About\ServiceAlerts.aspx" />
-    <Content Include="share\html\About\Sitemap.aspx" />
-    <Content Include="share\html\About_Us\Default.aspx" />
-    <Content Include="share\html\About_Us\Environmental.aspx" />
-    <Content Include="share\html\About_Us\Infrastructure.aspx" />
-    <Content Include="share\html\About_Us\LearnAboutWater.aspx" />
-    <Content Include="share\html\About_Us\Profile.aspx" />
-    <Content Include="share\html\About_Us\ProperDisposalOfMedication.aspx" />
-    <Content Include="share\html\About_Us\SafeWater.aspx" />
-    <Content Include="share\html\About_Us\ServiceAreaMap.aspx" />
-    <Content Include="share\html\About_Us\SocialResponsibility.aspx" />
-    <Content Include="share\html\About_Us\WaterSense.aspx" />
-    <Content Include="share\html\About_Us\WaterVideo.aspx" />
-    <Content Include="share\html\Careers\Benefits.aspx" />
-    <Content Include="share\html\Careers\Default.aspx" />
-    <Content Include="share\html\Careers\Diversity.aspx" />
-    <Content Include="share\html\Careers\Jobs.aspx" />
-    <Content Include="share\html\Careers\Jobs_DE.aspx" />
-    <Content Include="share\html\Careers\Jobs_NJ.aspx" />
-    <Content Include="share\html\Careers\WaterWastewater.aspx" />
-    <Content Include="share\html\Customer_Care\ChangeAddress.aspx" />
-    <Content Include="share\html\Customer_Care\CheckFreePay.aspx" />
-    <Content Include="share\html\Customer_Care\CurbBox.aspx" />
-    <Content Include="share\html\Customer_Care\Default.aspx" />
-    <Content Include="share\html\Customer_Care\FAQ.aspx" />
-    <Content Include="share\html\Customer_Care\HowtoReadMeter.aspx" />
-    <Content Include="share\html\Customer_Care\Leaks.aspx" />
-    <Content Include="share\html\Customer_Care\MasterValve.aspx" />
-    <Content Include="share\html\Customer_Care\PayBill.aspx" />
-    <Content Include="share\html\Customer_Care\Responsibilities.aspx" />
-    <Content Include="share\html\Customer_Care\Safety.aspx" />
-    <Content Include="share\html\Customer_Care\Underground.aspx" />
-    <Content Include="share\html\Customer_Care\Water_Conservation_Tips.aspx" />
-    <Content Include="share\html\Customer_Care\WeCareAboutQuality.aspx" />
-    <Content Include="share\html\Default.aspx" />
-    <Content Include="share\html\Family\MWC\Default.aspx" />
-    <Content Include="share\html\Family\MWC\_title.txt" />
-    <Content Include="share\html\Family\Navigation.ascx" />
-    <Content Include="share\html\Family\Pinelands\Default.aspx" />
-    <Content Include="share\html\Family\Pinelands\_title.txt" />
-    <Content Include="share\html\Family\TidewaterES\Default.aspx" />
-    <Content Include="share\html\Family\TidewaterES\FAQ.aspx" />
-    <Content Include="share\html\Family\TidewaterES\_title.txt" />
-    <Content Include="share\html\Family\TidewaterUT\Default.aspx" />
-    <Content Include="share\html\Family\TidewaterUT\FAQ.aspx" />
-    <Content Include="share\html\Family\TidewaterUT\_title.txt" />
-    <Content Include="share\html\Family\USAinc\Default.aspx" />
-    <Content Include="share\html\Family\USAinc\_title.txt" />
-    <Content Include="share\html\Family\USAPerth\Default.aspx" />
-    <Content Include="share\html\Family\USAPerth\_title.txt" />
-    <Content Include="share\html\Family\WhiteMarsh\Default.aspx" />
-    <Content Include="share\html\Family\WhiteMarsh\_title.txt" />
-    <Content Include="share\html\Homepage_Blurb.ascx" />
-    <Content Include="share\html\Investor_Relations\Default.aspx" />
-    <Content Include="share\html\LineCare\Default.aspx" />
-    <Content Include="share\html\Our_Services\BusinessDevelopment.aspx" />
-    <Content Include="share\html\Our_Services\Default.aspx" />
-    <Content Include="share\html\Our_Services\EconomicDevelopment.aspx" />
-    <Content Include="share\html\Our_Services\Experts.aspx" />
-    <Content Include="share\html\Our_Services\Municipal.aspx" />
-    <Content Include="share\html\Our_Services\Partnerships.aspx" />
-    <Content Include="share\html\Our_Services\SystemDesign.aspx" />
-    <Content Include="share\html\Our_Services\Wastewater.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Catino_Annette.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Cutting_John.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Default.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Doll_Dennis.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Esposito_Gerard.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Garrett_James.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Middleton_John.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Mulkerin_John.aspx" />
-    <Content Include="share\html\People\Board_And_Management\OConnor_Bruce.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Quinn_Kenneth.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Reinhard_Walter.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Risoldi_Richard.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Shein_Jeffries.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Sohler_Bernadette.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Tompkins_Richard.aspx" />
-    <Content Include="share\html\People\Board_And_Management\Williams_Ronald.aspx" />
-    <Content Include="share\html\People\Default.aspx" />
-    <Content Include="share\html\Press\Background.aspx" />
-    <Content Include="share\html\Press\Contact.aspx" />
-    <Content Include="share\html\Press\Default.aspx" />
-    <Content Include="share\images\2008_income.png" />
-    <Content Include="share\images\811.png" />
-    <Content Include="share\images\arrow_right_8.png" />
-    <Content Include="share\images\background.png" />
-    <Content Include="share\images\blueprints.png" />
-    <Content Include="share\images\bulldozer.jpg" />
-    <Content Include="share\images\careers.jpg" />
-    <Content Include="share\images\careersA1.jpg" />
-    <Content Include="share\images\careersA2.jpg" />
-    <Content Include="share\images\careersA3.jpg" />
-    <Content Include="share\images\careersB1.jpg" />
-    <Content Include="share\images\careersB2.jpg" />
-    <Content Include="share\images\careersB3.jpg" />
-    <Content Include="share\images\child_drinking.jpg" />
-    <Content Include="share\images\child_drinking_2.jpg" />
-    <Content Include="share\images\contact.jpg" />
-    <Content Include="share\images\corp_social.jpg" />
-    <Content Include="share\images\customer_care.jpg" />
-    <Content Include="share\images\dennis.jpg" />
-    <Content Include="share\images\dennis_signature.png" />
-    <Content Include="share\images\development.jpg" />
-    <Content Include="share\images\education.jpg" />
-    <Content Include="share\images\environment_1.jpg" />
-    <Content Include="share\images\environment_2.jpg" />
-    <Content Include="share\images\faq_images.jpg" />
-    <Content Include="share\images\fix_a_leak_2010.png" />
-    <Content Include="share\images\handshake.jpg" />
-    <Content Include="share\images\homepage.png" />
-    <Content Include="share\images\homepage1.png" />
-    <Content Include="share\images\homepage2.jpg" />
-    <Content Include="share\images\homepage3.png" />
-    <Content Include="share\images\homepage4.png" />
-    <Content Include="share\images\infrastructure.jpg" />
-    <Content Include="share\images\linecare_diagram.jpg" />
-    <Content Include="share\images\linecare_house.jpg" />
-    <Content Include="share\images\linecare_logo.png" />
-    <Content Include="share\images\logo.png" />
-    <Content Include="share\images\meter.jpg" />
-    <Content Include="share\images\middlesexwater.jpg" />
-    <Content Include="share\images\middlesexwater.png" />
-    <Content Include="share\images\MWC_Web_Med.gif" />
-    <Content Include="share\images\NAWC_Logo_corp_vert_rgb.png" />
-    <Content Include="share\images\news.jpg" />
-    <Content Include="share\images\partnership.jpg" />
-    <Content Include="share\images\people\Catino_Annette.jpg" />
-    <Content Include="share\images\people\Cutting_John.jpg" />
-    <Content Include="share\images\people\Doll_Dennis.jpg" />
-    <Content Include="share\images\people\Esposito_Gerard.jpg" />
-    <Content Include="share\images\people\Garrett_James.jpg" />
-    <Content Include="share\images\people\gerard_esposito.jpg" />
-    <Content Include="share\images\people\Middleton_John.jpg" />
-    <Content Include="share\images\people\Mulkerin_John.jpg" />
-    <Content Include="share\images\people\OConnor_Bruce.jpg" />
-    <Content Include="share\images\people\Quinn_Kenneth.jpg" />
-    <Content Include="share\images\people\Reinhard_Walter.jpg" />
-    <Content Include="share\images\people\Risoldi_Richard.jpg" />
-    <Content Include="share\images\people\Shein_Jeffries.jpg" />
-    <Content Include="share\images\people\Sohler_Bernadette.jpg" />
-    <Content Include="share\images\people\Tompkins_Richard.jpg" />
-    <Content Include="share\images\people\Williams_Ronald.jpg" />
-    <Content Include="share\images\people\william_ring.jpg" />
-    <Content Include="share\images\pinelands_logo.jpg" />
-    <Content Include="share\images\pinelands_pipes.jpg" />
-    <Content Include="share\images\pinelands_tank.jpg" />
-    <Content Include="share\images\pinelands_wastewater_logo.jpg" />
-    <Content Include="share\images\professional_capabilities.png" />
-    <Content Include="share\images\PWW_Web_Med.gif" />
-    <Content Include="share\images\safe_water.png" />
-    <Content Include="share\images\service_map.png" />
-    <Content Include="share\images\service_worker.jpg" />
-    <Content Include="share\images\shower.jpg" />
-    <Content Include="share\images\southern_shores_images.jpg" />
-    <Content Include="share\images\Support our Troops.jpg" />
-    <Content Include="share\images\support_our_troops.jpg" />
-    <Content Include="share\images\system_design.jpg" />
-    <Content Include="share\images\team.jpg" />
-    <Content Include="share\images\TESI_Web_Med.gif" />
-    <Content Include="share\images\tidewater_es_logo.png" />
-    <Content Include="share\images\tidewater_img.jpg" />
-    <Content Include="share\images\tidewater_utilities_inc.gif" />
-    <Content Include="share\images\tidewater_worker.jpg" />
-    <Content Include="share\images\TU_Web_Med.gif" />
-    <Content Include="share\images\USAlogo.gif" />
-    <Content Include="share\images\USAPA_Web_Med.gif" />
-    <Content Include="share\images\usa_perth_logo.png" />
-    <Content Include="share\images\usa_pic.jpg" />
-    <Content Include="share\images\USA_Web_Med.gif" />
-    <Content Include="share\images\wastewater.jpg" />
-    <Content Include="share\images\wastewater_case.jpg" />
-    <Content Include="share\images\water.jpg" />
-    <Content Include="share\images\watersense_partner.png" />
-    <Content Include="share\images\watersense_partner_small.png" />
-    <Content Include="share\images\water_drop.jpg" />
-    <Content Include="share\images\water_expertise.jpg" />
-    <Content Include="share\images\water_meter.jpg" />
-    <Content Include="share\images\water_workers.jpg" />
-    <Content Include="share\images\white_marsh_logo.png" />
-    <Content Include="share\images\WM_Web_Med.gif" />
-    <Content Include="share\templates\NotAvailable.ascx" />
     <Content Include="static\bootstrap\css\bootstrap-responsive.css" />
     <Content Include="static\bootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="static\bootstrap\css\bootstrap.css" />
@@ -513,40 +267,6 @@
     <Content Include="Dinamico\Themes\COH\Content\rslides.css" />
     <Content Include="static\slideshow.js" />
     <Content Include="static\styles.css" />
-    <Content Include="Upload\Images\copter.jpg" />
-    <Content Include="Upload\Images\copter_cube.jpg" />
-    <Content Include="Upload\Images\copter_half.jpg" />
-    <Content Include="Upload\Images\copter_icon.jpg" />
-    <Content Include="Upload\Images\copter_original.jpg" />
-    <Content Include="Upload\Images\copter_third.jpg" />
-    <Content Include="Upload\Images\copter_thumb.jpg" />
-    <Content Include="Upload\Images\copter_wide.jpg" />
-    <Content Include="Upload\Images\fronds.jpg" />
-    <Content Include="Upload\Images\fronds_cube.jpg" />
-    <Content Include="Upload\Images\fronds_half.jpg" />
-    <Content Include="Upload\Images\fronds_icon.jpg" />
-    <Content Include="Upload\Images\fronds_original.jpg" />
-    <Content Include="Upload\Images\fronds_third.jpg" />
-    <Content Include="Upload\Images\fronds_thumb.jpg" />
-    <Content Include="Upload\Images\fronds_wide.jpg" />
-    <Content Include="Upload\Images\jetty.jpg" />
-    <Content Include="Upload\Images\jetty_cube.jpg" />
-    <Content Include="Upload\Images\jetty_half.jpg" />
-    <Content Include="Upload\Images\jetty_icon.jpg" />
-    <Content Include="Upload\Images\jetty_original.jpg" />
-    <Content Include="Upload\Images\jetty_third.jpg" />
-    <Content Include="Upload\Images\jetty_thumb.jpg" />
-    <Content Include="Upload\Images\jetty_wide.jpg" />
-    <Content Include="Upload\Images\reeds.jpg" />
-    <Content Include="Upload\Images\reeds_cube.jpg" />
-    <Content Include="Upload\Images\reeds_half.jpg" />
-    <Content Include="Upload\Images\reeds_icon.jpg" />
-    <Content Include="Upload\Images\reeds_original.jpg" />
-    <Content Include="Upload\Images\reeds_third.jpg" />
-    <Content Include="Upload\Images\reeds_thumb.jpg" />
-    <Content Include="Upload\Images\reeds_wide.jpg" />
-    <Content Include="Upload\n2logo.png" />
-    <Content Include="Upload\n2logo_white.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -580,13 +300,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="WebParts\HeaderStockPrice.ascx" />
-    <Content Include="WebParts\Homepage\NewsFeed.ascx" />
-    <Content Include="WebParts\Navigation.ascx" />
-    <Content Include="WebParts\Sitemap.ascx" />
     <Content Include="Dinamico\Themes\COH\Views\StartPage\Index.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\StartPage\NotFound.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\Shared\FamilyColumn.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\Image.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\DocViewer.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\DocumentViewer.cshtml" />
@@ -601,7 +316,6 @@
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Gutter.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\ContentPages\Gutter.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\MiniGutter.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\CustUpdate\Import.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Link\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Index.cshtml" />
     <Content Include="N2\N2.zip" />
@@ -685,16 +399,9 @@
     <Content Include="Dinamico\Themes\Dark\Views\Web.config" />
     <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\PreContent.cshtml" />
     <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\Header.cshtml" />
-    <Content Include="Dinamico\Themes\Concrete\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Concrete\Views\Shared\LayoutPartials\PreContent.cshtml" />
-    <Content Include="Dinamico\Themes\Concrete\Views\Shared\LayoutPartials\Header.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\TopNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\PreContent.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\Header.cshtml" />
-    <Content Include="Dinamico.csproj.orig" />
     <Content Include="App_Data\SampleContent.n2.xml.gz" />
+    <Content Include="Dinamico\Themes\Default\Views\ContentParts\Slideshow.cshtml" />
+    <Content Include="Dinamico\Themes\COH\Views\Shared\_RightNavShared.cshtml" />
     <None Include="N2\n2cms.configuration.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -702,7 +409,7 @@
     <None Include="Properties\PublishProfiles\Profile2.pubxml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\CompanyPage\" />
+    <Folder Include="Controllers\" />
     <Folder Include="_bin_deployableAssemblies\" />
   </ItemGroup>
   <ItemGroup>
@@ -712,140 +419,12 @@
     <Content Include="App_Data\n2_host.config" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="code\Model.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="ContentPage.master" />
-    <None Include="Data\FileSystemData.xsc">
-      <DependentUpon>FileSystemData.xsd</DependentUpon>
-    </None>
-    <None Include="Data\FileSystemData.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FileSystemData.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Data\FileSystemData.xss">
-      <DependentUpon>FileSystemData.xsd</DependentUpon>
-    </None>
-    <Content Include="Views\StockTicker\Index.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\ContentPages\Index.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\CustUpdate\Page2.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\CustUpdate\_Header.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\CustUpdate\Page3.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\CustUpdate\_Intro.cshtml" />
     <None Include="Dinamico\Themes\Web.config.old" />
     <Content Include="Dinamico\Themes\COH\Views\_ViewStart.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\CustUpdate\Page1.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Shared\_Layout.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Shared\Error.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Web.config" />
-    <None Include="share\files\2010\careers_contest_2010.pdf" />
-    <None Include="share\files\2010\epa_watersense_factsheet.pdf" />
-    <None Include="share\files\2010\FACT_SHEET_3_10.pdf" />
-    <None Include="share\files\2010\fact_sheet_6_10.pdf" />
-    <None Include="share\files\2010\mwc_rate_increase_notice_4_10.pdf" />
-    <None Include="share\files\2010\MWC_Tariff_3_10.pdf" />
-    <None Include="share\files\2010\pledge_to_protect_2010.pdf" />
-    <None Include="share\files\2010\RENEW_Release_2010_Port_Reading_and_Sewaren.pdf" />
-    <None Include="share\files\2010\TESI_Tariff_4_10.pdf" />
-    <None Include="share\files\2010\Tidewater_2009 Year_In_Review.pdf" />
-    <None Include="share\files\2010\tidewater_rate_increase_notice_4_10.pdf" />
-    <None Include="share\files\2010\yes_application_2010.pdf" />
-    <None Include="share\files\2010\yes_application_2010_x2.pdf" />
-    <None Include="share\files\2011\mw_fact_sheet.pdf" />
-    <Content Include="share\files\application_de.pdf" />
-    <Content Include="share\files\application_nj.pdf" />
-    <Content Include="share\files\capabilities_08.pdf" />
-    <Content Include="share\files\coloring_contest.pdf" />
-    <None Include="share\files\in_your_community_10_09.pdf" />
-    <None Include="share\files\Middlesex_System_LineCare_Application.pdf" />
-    <Content Include="share\files\msw_about_your_water_rates.pdf" />
-    <Content Include="share\files\msw_customer_update_fall_08.pdf" />
-    <Content Include="share\files\msw_update_fall_08.pdf" />
-    <None Include="share\files\Project Wet Registration Form 2009.pdf" />
-    <Content Include="share\files\project_wet.pdf" />
-    <Content Include="share\files\project_wet_registration.pdf" />
-    <None Include="share\files\quality\2009_Bayview.pdf" />
-    <None Include="share\files\quality\2009_MSEX_CCR.pdf" />
-    <None Include="share\files\quality\2009_Twin_Lakes_CCR.pdf" />
-    <Content Include="share\files\renew_2008.pdf" />
-    <Content Include="share\files\tariff\mwc_tariff.pdf" />
-    <Content Include="share\files\tariff\pwc_tariff.pdf" />
-    <Content Include="share\files\tariff\pwwc_tariff.pdf" />
-    <Content Include="share\files\tariff\tesi_tariff.pdf" />
-    <Content Include="share\files\tariff\tui_tariff.pdf" />
-    <Content Include="share\files\tesi_wastewater_petition.doc" />
-    <Content Include="share\files\tui_about_your_water_rates.pdf" />
-    <Content Include="share\files\tui_customer_update_fall_08.pdf" />
-    <Content Include="share\files\tui_water_petition.pdf" />
-    <Content Include="share\files\tui_year_in_review_2007.pdf" />
-    <None Include="share\files\TUI_Year_in_Review_2008.pdf" />
-    <None Include="share\files\wandendale_aerial.pdf" />
-    <None Include="share\files\wandendale_fact_sheet.pdf" />
-    <None Include="share\html\About\Water_Conservation_Tips.link" />
-    <Content Include="share\html\ContentTemplate.master" />
-    <None Include="share\html\Customer_Care\customer_update.link" />
-    <Content Include="share\html\Family\Family.sitemap" />
-    <Content Include="share\html\Family\FamilyPage.master" />
-    <Content Include="share\html\Family\MWC\careers.link" />
-    <Content Include="share\html\Family\MWC\checkfree_locations.link" />
-    <Content Include="share\html\Family\MWC\cust_rights.link" />
-    <Content Include="share\html\Family\MWC\customer_update.link" />
-    <Content Include="share\html\Family\MWC\Directions.aspx.ignore" />
-    <Content Include="share\html\Family\MWC\pay_bill_online.link" />
-    <Content Include="share\html\Family\MWC\Rates.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\MWC\Tariff.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\Pinelands\careers.link" />
-    <Content Include="share\html\Family\Pinelands\checkfree_locations.link" />
-    <Content Include="share\html\Family\Pinelands\cust_rights.link" />
-    <Content Include="share\html\Family\Pinelands\pay_bill_online.link" />
-    <Content Include="share\html\Family\Pinelands\Rates.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\Pinelands\WWRates.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\TidewaterES\careers.link" />
-    <Content Include="share\html\Family\TidewaterES\checkfree_locations.link" />
-    <Content Include="share\html\Family\TidewaterES\cust_rights.link" />
-    <Content Include="share\html\Family\TidewaterES\pay_bill_online.link" />
-    <Content Include="share\html\Family\TidewaterES\Tariff.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\TidewaterES\WastewaterPetition.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\TidewaterUT\careers.link" />
-    <Content Include="share\html\Family\TidewaterUT\checkfree_locations.link" />
-    <Content Include="share\html\Family\TidewaterUT\cust_rights.link" />
-    <Content Include="share\html\Family\TidewaterUT\CustomerUpdate.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\TidewaterUT\Delaware_Landowner_FAQ.aspx.ignore">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\TidewaterUT\Directions.aspx.ignore" />
-    <Content Include="share\html\Family\TidewaterUT\pay_bill_online.link" />
-    <Content Include="share\html\Family\TidewaterUT\Tariff.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\TidewaterUT\WaterServicePetition.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\TidewaterUT\YearInReview.link">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
-    <Content Include="share\html\Family\USAinc\checkfree_locations.link" />
-    <Content Include="share\html\Family\USAPerth\checkfree_locations.link" />
-    <Content Include="share\html\Family\WhiteMarsh\careers.link" />
-    <Content Include="share\html\Family\WhiteMarsh\checkfree_locations.link" />
-    <Content Include="share\html\Family\WhiteMarsh\pay_bill_online.link" />
-    <Content Include="share\html\People\BiographyTemplate.Master" />
     <Content Include="Template.master" />
     <Content Include="Views\ContentParts\Tile.cshtml" />
   </ItemGroup>
