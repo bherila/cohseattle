@@ -1,0 +1,488 @@
+
+README for SCForm - Simple Contact Form
+
+
+Rationale
+
+    Yeah, there are a lot of "contact form" type scripts out there.  But
+    after looking at all I could find, and even installing and testing a
+    few, I found that none of them offered just the mix of simplicity and
+    functionality I desired.  Basically, I wanted something that was both
+    fairly simple and that was secure (including the hiding of recipients'
+    email addresses!).
+
+    So I wrote my own.  Yes, I'm afraid it's: Yet Another Contact Form
+    ;).
+
+
+Introduction
+
+    SCForm is pretty... simple.  There is a minimum of five files:
+
+	scform.php - This is the web form.  It's mostly HTML.  In fact:
+	    the only PHP in there is the code that supports getting the
+	    contact list from the common file (described below).
+
+	scformproc.php - This is the script to which the web form is
+	    submitted.
+
+	scfresp.php - The is the response page the user sees after they
+	    (successfully) submit.  It's mostly HTML, with a bit of PHP
+	    in there for the "take me back" functionality.
+
+	scfgenimg.php - This bit of PHP generates the CAPTCHA (tm) image
+	    if $requireVerify is set to "true"
+
+	scfconfig.php - This is where scformproc.php's configuration
+	    is.
+
+	contacts.cfg - The list of valid contacts.  This is parsed by
+	    both the web form (scform.php) and the processing script
+	    (scformproc.php).
+
+    A sixth, optional, file is the "ban list" (banlist.cfg).
+
+
+Requirements
+
+    SCForm's code doesn't do anything especially exotic that I know of.
+    So I *assume* it'll run in most any operating system, web server and
+    PHP environment.  For reference, it was originally developed on:
+
+	Operating System: Sun Sparc Solaris 7
+	      Web Server: Apache 1.3.33
+	     PHP Version: 4.3.10
+
+    Since release 1.2.6, it's been developed on:
+
+	Operating System: Ubuntu 9.10 Desktop (Karmic) GNU/Linux
+	      Web Server: Apache 2.2.12
+	     PHP Version: 5.2.10
+
+    SCForm uses PHP's built-in mail() function to email the form.  So
+    it *does* require a working mail server on the host upon which it's
+    installed.  Note that the the mail server software doesn't have to
+    be set up to *receive* email from other places on the 'net, but it
+    does have to be set up to send email out.  Also, php.ini has to be
+    set up properly to use whatever email software's available on your
+    system.  (Sorry, can't help you with that part.)
+
+    If you want to enable CAPTCHA support, your PHP installation will have
+    to be built with GD image generation support.
+
+
+Installation
+
+    Couldn't be simpler.
+
+    Download and unpack the distribution of your choice.
+    
+	Note that the files in the zip file package have
+	had carriage-returns added as a convenience for
+	our MS-Windows-using brethren.  Unix/Linux users
+	will probably want to stick with the tarball for
+	that reason.
+    
+    Quick install:
+    
+	1. Copy the following five files:
+
+	    scfconfig.php
+	    scfgenimg.php
+	    scform.php
+	    scformproc.php
+	    scfresp.php
+	    contacts.cfg
+	
+	   to a directory in your web space and make sure the web
+	   server can access them.
+
+	2. Edit scfconfig.php for your host in $formProcAllowedReferers.
+
+	3. Edit contacts.cfg for your contacts.
+
+	That's all there is to it!  Except...
+
+	You should read the section below entitled "Security Issues"
+	before calling it a day.
+
+	If you know in advance there are certain senders, remote hosts
+	or remote IP addresses you wish to restrict from using SCForm,
+	copy and edit banlist.cfg, as well.
+
+	You can edit scform.php and scfresp.php (the form and response
+	pages) to fit your site's theme, if you like.  These *probably*
+	won't change on subsequent updates.
+
+
+Upgrading
+
+    Unless the ChangeLog notes otherwise, it should not be necessary
+    to replace your local configuration files when upgrading SCForm.
+    These are (as distributed):
+
+	    scfconfig.php
+	    contacts.cfg
+	    banlist.cfg
+
+
+Security Issues
+
+    SCForm has a separate contacts configuration file (default filename:
+    contacts.cfg) to:
+
+	1. Prevent SCForm from being abused to send email to anybody but
+	   the specified recipients and
+
+	2. To hide email addresses from web page scrapers.
+
+    As long as the contacts configuration file is protected from being
+    modified by other than authorized people, SCForm is believed safe from
+    being abused in the first way.  However, depending on your web
+    server's configuration, there may be issues related to keeping the
+    email addresses in it truly secret.
+
+    If your web server allows directory indexing and you place SCForm in a
+    directory lacking an "index" file, you should put an ".htaccess" file
+    in that directory to prevent the directory from being browsed.  The
+    .htaccess file should contain either "Options none" or at least not
+    include "Indexes" or "All" in the "Options" line.
+
+    Providing a curious person doesn't know the name of the contacts file,
+    this might be more-or-less sufficient to protect it from prying eyes.
+    You could improve the odds by renaming the file.  (Note that you'll
+    have to modify both scfconfig.php and the reference to the contacts
+    file in your form if you do this.)
+
+    Better yet would be to refuse access to the contacts.cfg file
+    altogether.  You can do this, with Apache, by adding the following
+    directive to the .htaccess file in the directory in which SCForm's
+    config files reside:
+
+	<Files contacts.cfg>
+	    Order Allow,Deny
+	    Deny from all
+	</Files>
+
+    Even better, to protect *all* files ending in ".cfg":
+
+	<Files ~ "\.cfg$">
+	    Order Allow,Deny
+	    Deny from all
+	</Files>
+
+    For SCForm's default filenames: that latter directive would protect
+    both the contacts and banlist config files.
+
+    The best thing of all would be to place the contacts.cfg file outside
+    your web server's DOCUMENT_ROOT directory structure and modify
+    scfconfig.php appropriately.
+
+    Naturally, you should test to make sure things are as you believe
+    them to be.
+
+    The discussion above relates to the Apache web server.  Sorry, I don't
+    know how other servers accomplish the same thing.
+
+
+Configuration
+
+    scfconfig.php
+
+	This file contains a number of configuration variables for
+	scformproc.php and scform.php.  The only one that MUST be
+	customized is the $formProcAllowedReferers array.  You should set
+	that to include the host upon which the web form is
+	installed/running.  If you set it wrong, SCForm will not work.  If
+	you make it empty, any host can submit.  See: Hint, Kinks and
+	Tricks for ideas on how to go about figuring out how to set this.
+
+	The remainder of the configuration variables in scfconfig.php can
+	be left alone if you wish.  (They each have copious notes
+	explaining what they're for, so they'll not be further-covered
+	here.)
+
+    contacts.cfg
+
+	This is the list of web form contacts.  It is read by both
+	scform.php (for generating the recipient selection menu) and by
+	scformproc.php (to validate recipient selections and translate
+	them to email addresses).  The format of this file is:
+
+	    key: menu text: email addresses
+
+	Where:
+
+	    "key" is the "value" that's passed to the form processor
+		script (scformproc.php)
+
+	    "menu text" is the text that appears in the web form
+		menu
+
+	    "email addresses" is a space-comma separated list of
+		email addresses that the form data will be sent to for a
+		particular menu selection.
+
+	The email address portion can contain multiple email addresses in
+	the form of:
+
+	    user1@example.com, user2@example.com, user3@example.com ...
+
+	This file can contain blank lines and comments.  Comments are
+	preceded by a "#" ("pound," "hash" or "sharp" sign), and can be on
+	their own line or following an entry.
+
+	Of particular note regarding the web form page provided:
+
+	    If there's only one entry in the contacts.cfg file, there will
+	    be no menu presented.  Instead, just the "menu text" will be
+	    displayed on the web form as the (sole) contact.
+
+	    When there are multiple contacts: normally, the first entry in
+	    the contact list will be the default menu item.  However, if
+	    the web form is called with an argument that matches one of
+	    the "key" entries in the contact list, that will be the
+	    default menu selection.  In this manner URLs to the contact
+	    page can be customized to come up with a desired contact.
+
+	    For example: suppose the contacts.cfg file contained:
+
+		WebMaster: Web Master: webmaster@example.com
+		Sales: Sales Dept.: phred_phlinstone@example.com
+		bofh: Systems Admin.: sysadmin@example.com
+
+	    and a site's product sales pages had contact URLs like:
+
+		... <a href=".../scform.php?Sales">Contact us</a> ...
+
+	    Logically, one might assume that somebody clicking on that
+	    link would want to contact the sales department, right?  So
+	    the menu entry for "Sales Dept." would become the default
+	    instead.
+
+		Note that you don't need to be particularly
+		careful of capitalization with the argument
+		in the referring url--the compare for it is
+		done case-insensitively.
+
+    banlist.cfg
+
+	You can have an optional "ban list."  This is a list of email
+	addresses, host or domain names, and IP addresses from which you
+	will not accept form submissions.
+
+	The format is one entry per line.
+
+	If the entry contains an "@", it's an email address ban.
+
+	    If it ends with an "@", it's any user by that name at any host
+	    or domain.  (Which is probably relatively worthless.)
+
+	    If it starts with an "@", it's any user at that host or
+	    domain.
+
+	    For example:
+
+		"@example.com" will match any email address ending in
+		"@example.com" or ".example.com", which means any hosts
+		or sub-domains in "example.com"
+
+		"@foo.example.com" will match any email address ending
+		in "@foo.example.com" or ".foo.example.com", which means
+		any hosts or sub-domains in "foo.example.com".
+
+		You get the idea.
+
+	    If it's "something@something," the entire email address is
+	    compared.
+
+	    Note that there's probably not much point to email address
+	    bans.  Anybody can enter whatever they want there, right?
+
+	If the entry is a dotted-quad IP address, optionally in CIDR
+	notation, it's an IP address ban.  Note that you don't need a
+	complete IP address.
+
+	    For example:
+
+		192.168
+
+	    will match any address that starts with "192.168".
+
+	    Be careful with address bits that contain less than three
+	    digits.  If you wanted to ban, for example, the entire set
+	    of 256 addresses in 192.168.12.0-255 and you put only
+
+		192.168.12
+
+	    in your banlist.cfg entry, you'd also be banning
+	    192.168.120.0 through 192.168.129.255.  So what you'd
+	    really want to do is put in:
+
+		192.168.12.
+
+	    with the trailing "."
+
+	    If you wish to block a sub-net, you can specify IP address
+	    blocks in CIDR notation.
+	    
+	    For example:
+	    
+		192.168.204.0/26
+		
+		would block the 64 addresses in the range 192.168.204.0
+		through 192.168.204.63.
+
+	    See "Remote Host and Address Tracking" for details on how
+	    one might determine what to list in cases of abuse.
+
+	If an entry doesn't match on of the above, it's assumed to be a
+	remote hostname or domain ban.
+
+		Note: if your web server software doesn't do
+		hostname lookups, this won't work at all.  See
+		"Remote Host and Address Tracking" for details.
+
+	    You want to be careful with these.  If you wanted to ban
+	    everybody at "bar.com," for example, you might tend to put
+
+		bar.com
+
+	    in your banlist.cfg file.  But that will match *anything*
+	    ending in "bar.com."   Thus "foobar.com" will match!  To make
+	    sure you're banning *just* "bar.com," add a leading dot,
+	    thusly:
+
+		.bar.com
+
+	All string compares are case-insensitive.
+
+	Do not put "*"s and other regular expression meta-chars in the
+	banlist.  They're neither supported nor, IMHO, are they
+	necessary.
+
+	Blank lines and comments in the config file are handled the same
+	as with the contacts list: they're ignored.
+
+	See the scfconfig.php configuration parameters for:
+
+	    $warnBanned
+	    $adviseOnBan
+	    $logOnBan
+
+	for options relating to the banlist.
+
+    Miscellania
+
+	You can put scformproc.php in a place other than the same
+	directory as the web form itself by the simple expedient of
+	changing the "action=" bit in the web form.  (But you knew that,
+	right?)  Make sure to take scfconfig.php and scfresp.php along :).
+
+	You can move/rename the contacts.cfg and banlist.cfg files if you
+	want.  Their paths are contained in easily-found variables in the
+	scfconfig.php and scform.php files.
+
+	Obviously, you can customize the look of the web form.  The
+	response page is pretty plain.  Edit to taste.
+
+
+Remote Host and IP Address Tracking
+
+    SCForm optionally provides remote hostname and IP address tracking.
+    These can be enabled or disabled independently of one another.  They
+    are enabled, by default, in the distribution.
+
+    The tracking information is placed in "X-headers" in the email SCForm
+    sends, as follows:
+
+	X-Remote-Host:
+	X-Remote-Addr:
+	X-Http-X-Forwarded-For:
+	X-SCForm-Referer:
+
+    Remote host tracking only works if:
+
+	1. The web server upon which SCForm is running has name
+	   resolution enabled.
+
+	2. The remote host's IP address has reverse DNS entries in
+	   the DNS zone file for its IP block.  (A PTR record.)
+
+    Even if these two conditions are met, the hostname determined by name
+    resolution may not be consistent with the host's actual name.  Users
+    of small address spaces usually have no control over the DNS zone for
+    a block of IP addresses.  So there are frequently situations like:
+
+	A lookup of host.example.com returns an IP address of
+	192.168.1.2.
+
+	A lookup of 192.168.1.2 returns a "hostname" of
+	dsl-192-168-1-2.det-pop.some_isps_domain.foo
+
+    To further complicate matters: if there's a proxy between the server
+    upon which SCForm's running and the browser user's machine,
+    X-Remote-Host:  will yield the proxy's hostname, rather than that of
+    the machine upon which the browser's running.  How do you tell?  Read
+    on.
+
+    In some cases there will be two IP addresses returned.  This means
+    there is an HTTP proxy (possibly for caching) between the server upon
+    which SCForm is running and the browser user's machine.  In such
+    cases, X-Remote-Addr: indicates the proxy server's IP address and
+    X-Http-X-Forwarded-For: probably indicates the IP address of the
+    machine on which the browser's running.
+
+    It is left as an exercise for the reader's imagination as to what
+    happens when there are two proxies between the web server SCForm is
+    running on and the machine a user's browser is running on.
+
+
+Hints, Kinks and Tricks
+
+    Figuring Out What To Put In $formProcAllowedReferers
+
+	One way to find out what $formProcAllowedReferers needs to be set
+	to is simply put some random hostname in there, such as
+	"host.example.com", try to submit, and see what host pops up
+	between the parenthesis in the error page.  (Actually, what's in
+	the $formProcAllowedReferers array, as examples, as SCForm is
+	distributed will do for this test.)
+
+	    Note that you want *just* the hostname bits.  Leave out
+	    the "http://" and anything following the hostname.
+
+	Some web servers apparently don't pass HTTP_REFERER information
+	along, so the parenthesis may be empty.  In this case, you'll
+	have to leave $formProcAllowedReferers empty, as well, to get
+	SCForm to work.
+
+    Form Is Submitted Without Error, But No Email Arrives
+
+	Assuming you put valid email addresses in "contacts.cfg," there's
+	a valid and working "sendmail_path," and there's nothing that
+	prevents sending email from whatever user your web server is
+	running under: If you're on a MS-Windows server, perhaps your mail
+	server software requires lines terminated in CRLF?  SCForm version
+	1.2.1 and beyond detect that they're running on WIN32 or WINNT, and
+	add these.
+
+
+Conclusion
+
+    I hope you find SCForm useful.  If you have any suggestions as to how
+    it might be improved (particularly with regards to security issues!),
+    or how the documentation might be improved, please let me know.  There
+    is a contact form on my web site :).
+
+    One thing I would ask that you NOT do: please, PLEASE don't ask for the
+    addition of millions of bells-and-whistles?  I want to keep this thing
+    simple.  Thank you.
+
+    Jim Seymour
+    jseymour [at] LinxNet [dot] com
+    http://jimsun.LinxNet.com
+
+
+Original Created: 23 Nov., 2002
+

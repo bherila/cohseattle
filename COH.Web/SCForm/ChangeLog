@@ -1,0 +1,221 @@
+ChangeLog for SCForm - Simple Contact Form
+
+
+rel-1.2.7	20120420
+
+    Removed deprecated session_register() call in scform.php.  (Sorry,
+    Kurt, for letting this languish for so long.)
+
+    Wrapped a session variable setting test in isset() in scform.php to
+    eliminate warning.  (Harmless, but not good.)
+
+rel-1.2.6	20100106
+
+    Added $noSimilarChars config variable (default: true).  Eliminates
+    visually-similar characters from CAPTCHA string.
+
+    *Really* changed use of $HTTP_SESSION_VARS in scform.php to $_SESSION.
+
+    Updated README to indicate new development platform.
+
+rel-1.2.5	20070304
+
+    Some misguided firewalls and HTTP proxy servers delete the HTTP
+    REFERER, so...
+
+	Changed default for $chkFormRefNotBlank to false and added cautionary
+	note to the docs.
+
+	Added $formProcBlankRefOkay to allow for empty HTTP REFERER in
+	scformproc.php, set it to true, and added cautionary note to
+	formProcAllowedReferers.
+
+    Updated README.
+
+    Thanks and a tip o' the hat to "Ben" for the suggestions!
+
+    Changed $requireVerify (CAPTCHA) default to false for maximum portability
+
+    Changed the names of a couple of variables in scfconfig.php to make clear
+    which were used by the form processor (scformproc.php) and which by the
+    form (scform.php).
+
+    Added "Reset" button for form.
+
+    Changed use of $HTTP_SESSION_VARS in scform.php to $_SESSION for
+    compatibility with PHP5.  Thanks and a tip o' the hat to
+    vigneron over at remcomp-dot-fr for the heads up.
+
+    Upgrading from earlier versions
+
+	You will have to replace scfconfig.php, as well as scform.php and
+	scformproc.php.
+
+rel-1.2.4	20060922
+
+    Added support for simple CAPTCHA (tm) form verification to try to foil
+    web form spambots.  (See: http://www.captcha.net/)
+
+	Note: Use of this option requires GD graphic library
+	support be built in to your web server in order to
+	generate the graphic test/verification string.
+
+    Added code to optionally sanity-check HTTP_REFERER as an anti-spam
+    measure.  (Thanks and a tip o' the hat to "McWebber" for the idea!)
+
+    Added a bit of conditional code to the response page URL generator to
+    prevent double-slashes in the URL. (Thanks and a tip o' the hat to
+    Robert Dalton for the bug report.)
+
+    Noted in README that the config files are best placed entirely outside
+    the HTTP server document root.  (Thanks and a tip o' the hat to Robert
+    Dalton for the suggestion.)
+
+    Upgrading from earlier versions
+
+	You will have to replace scfconfig.php, scform.php and scformproc.php.
+
+	You will have to add scfgenimg.php
+
+rel-1.2.3	20041108
+
+    Added $requireEmail option.
+
+	. If set to "true," user must supply email address (as with
+	  all previous versions of SCForm)
+	. If set to "false," user is not required to supply an email
+	  address.
+
+	Supplied email address is sanity-checked whether $requireEmail is
+	set to "true" or "false."
+
+	This change requires an update to scfconfig.php ONLY if you wish
+	to set $requireEmail to "false."  Otherwise, it defaults to "true"
+	- retaining config file compatibility with v1.2.2 and before.
+
+    Changed META charset to iso8859-1 in scform.php and scfresp.php so all
+    Western characters will render.  (Thanks and a tip o' the hat to
+    Claude Flener for the suggestion.)
+
+rel-1.2.2	20041010
+
+    Added additional processing to submitted "Subject" field text to make
+    sure the field can't be stuffed with a line-break, followed by "Cc:"
+    or "Bcc:" headers.
+
+	Note: I don't believe a vulnerability existed.  Past
+	experiments in trying to exploit SCForm like this, even
+	by doing the stuffing in the code, were not successful.
+	This change is insurance.
+
+rel-1.2.1	20040929
+
+    Added code to detect running on MS-Windows hosts and automatically
+
+	. Trim trailing newline from last added header line
+	. Transform newlines into carriage-return/newline pairs
+
+    It turns out that (some?) MS-Windows-based MTAs want carriage-returns
+    and won't tolerate "trailing" carriage-return/newline pairs.
+
+    Added note about trailing blank lines in scfconfig.php.  Thanks and a
+    tip o' the hat to Judy for the help!
+
+rel-1.2.0	20040712
+
+    1.1.3 promoted to "production" status.
+
+rel-1.1.3	20040623
+
+    Fixed bug in banlist checking that would cause banlist entries in CIDR
+    notation (e.g.: 10.1.2.0/24) to sometimes do the wrong thing--either
+    failing to catch things in the listed netblock or perhaps catching
+    things that weren't.
+
+rel-1.1.2	20040410
+
+    Fixed coding error in scformproc.php that prevented dotted-quad
+    (nn.nn.nn.nn) banlist entries from working.
+
+    Sample form (scform.php) now includes scfconfig.php, rather than
+    specifying things like the contacts.cfg file locally.
+
+    Added "X-SCForm-Referer:" header in emailed output.  (Shows how
+    sender got to the form if it was from another page.)
+
+	Note: This will require updating scfconfig.php *if* you
+	want this new X-header.
+
+    Fixed minor documentation bug in README.  Added short "Updating"
+    section.
+
+    Updated copyright notices.  Fixed URL for SCForm's home page in
+    docs.
+
+rel-1.1.1	20030206
+
+    Changed behaviour of $allowedReferers configuration array.  Now, if
+    it's empty, scformproc.php will accept from any referer.  This was
+    necessary as it seems some web servers don't set the HTTP_REFERER
+    environment variable.  Note that this means SCForm now works the way
+    the documentation always said it did.
+
+    Added "Hints, Kinks and Tricks" section to README, starting off with
+    "Figuring Out What To Put In $allowedReferers"
+
+rel-1.1.0	20021215
+
+    This release consists of documentation changes only.
+
+    Added installation step that talks about possible directory
+    browsing danger that would compromise the secrecy of "contacts"
+    list and .htaccess file suggestions.  Thanks to Scott Vickrey
+    for the suggestion.
+
+    Added note about local mail server software being required.
+
+rel-1.0.0	20021211
+
+    It's been over a week since 0.1.4 was released.  There've been
+    140 unique downloads of SCForm-0.1.0 thru 0.1.4, with over 115
+    unique downloads (calculated) of 0.1.4 alone.  There has been no
+    negative feedback and one very positive review on
+    php.resourceindex.com.  The script's been in use on at least
+    three (3) production servers I know of personally with no
+    reported problems.
+
+    I guess it's ready ;).
+
+rel-0.1.4	20021202
+
+    Changed scformproc.php to to re-direct to new page on successful
+    submit.  This prevents problem of user hitting refresh/reload on
+    browser re-submitting form contents.  This change adds scfresp.php
+    to the distribution.
+
+rel-0.1.3	20021130
+
+    Check for IP address of proxied clients (HTTP_X_FORWARDED_FOR).
+    Thanks to Ian H. for the suggestion in comp.lang.php and the
+    collaboration.
+
+    Added section "Remote Host and Address Tracking" to README.
+
+    The files in .zip versions of the distribution now have
+    carriage-returns in them for the convenience of our MS-Windows-
+    using brethren.
+
+rel-0.1.2	20021130
+
+    Improved sender email address matching.
+    Expanded installation docs in README.
+
+rel-0.1.1	20021129
+
+    Added ability to specify banned addresses in /nn CIDR notation.
+    Thanks to Joe Jared for the suggestion and example (Perl) code.
+
+rel-0.1.0	20021129
+
+    Initial release.
+

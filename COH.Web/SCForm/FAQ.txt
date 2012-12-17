@@ -1,0 +1,221 @@
+
+		    SCForm Frequently Asked Questions
+
+    SCForm's been out since November, 2002.  In that time, I've received a
+    few questions, requests and suggestions.  This FAQ is taken from
+    those.
+
+Index of SCForm Frequently Asked Questions (in no particular order)
+
+     1. What means "Unable to process form at this time" in response to
+        submitting?
+     2. SCForm was working fine, then, all-of-a-sudden, stopped working.
+        What could be wrong?
+     3. Form Is Submitted Without Error, But No Email Arrives
+     4. I'm getting "Cannot modify header information - headers already
+        sent"
+     5. SCForm is working properly, except I'm getting email notifications
+        of "This form was used from an unauthorized server! ()" occasionally.
+     6. I'd like additional fields in SCForm.  Will you add them?
+     7. I'd like additional fields in SCForm.  How do I add them?
+     8. Will you create a custom version of SCForm for me?
+     9. I'm using SCForm in a framed layout.  When somebody clicks the "take
+        me back" link on the response page, they get taken back to the
+        wrong frame.
+    10. Can I use SCForm for file uploads?
+    11. Would you add flood control to SCForm?
+    12. Would you add logging to SCForm?
+    13. My language's alphabet has characters that show up when the web
+	form is filled-out, but not in the emailed results.  Why is that?
+    14. I've enabled CAPTCHA (tm) with $requireVerify, but I'm not getting
+        any text image.
+    15. What is the difference between setting $formProcBlankRefOkay to
+	"true" and having an empty $formProcAllowedReferers?
+
+1. What means "Unable to process form at this time" in response to
+   submitting?
+
+   The string "Unable to process form at this time" simply means that the
+   attempt to mail the form failed.  There could be any number of reasons
+   for this, including that your web hosting service does not
+   allow/support the emailing of form data.  I suggest you contact their
+   support and ask.
+
+   You can also put a little PHP script somewhere in your web space that
+   reads like this:
+
+       <?php
+	   phpinfo();
+	?>
+
+   Call it something like "info.php" and then bring it up in your web
+   browser.  Under "Configuration - PHP Core," look for an entry labeled
+   "sendmail_path."  For Unix-like servers, the setting should read
+   something like "/usr/lib/sendmail -t -i".
+
+	Hint: It might not be a bad idea to print or save a copy of the
+	results.  That way, if things all-of-a-sudden stop working some
+	day (see FAQ item #2), you'll have something from which to
+	reference when things were working.
+
+   If that's there, it may be that sendmail isn't really where PHP was
+   told it should be, that sendmail isn't executable by the user i.d.
+   under which your web server is running, or that your hosting service
+   provider has configured it to prohibit emailing form data.  You'll have
+   to talk to them about it.
+
+   Note: If the host is not a Unix or Unix-like host of some type (e.g.:
+   it's Windows), there might be no mail sending facility.
+
+   See Also: 3. Form Is Submitted Without Error, But No Email Arrives
+
+
+2. SCForm was working fine, then, all-of-a-sudden, stopped working.  What
+   could be wrong?
+
+   Assuming *you* didn't change anything, most likely something changed in
+   your web-hosting environment.  You'll have to talk to your hosting
+   provider to see what they changed (broke?) recently.
+
+   See Also: 1. What means "Unable to process form at this time" in
+		response to submitting?
+
+
+3. Form Is Submitted Without Error, But No Email Arrives
+
+   Assuming you put valid email addresses in "contacts.cfg," there's a
+   valid and working "sendmail_path," and there's nothing that prevents
+   sending email from whatever user your web server is running under: If
+   you're on a MS-Windows server, perhaps your mail server software
+   requires lines terminated in CRLF?  SCForm version 1.2.1 and beyond
+   detect that they're running on WIN32 or WINNT, and add these.
+
+   See Also: 1. What means "Unable to process form at this time" in
+		response to submitting?
+
+
+4. I'm getting "Cannot modify header information - headers already sent"
+
+   If you're seeing something like the following, when you hit "Submit" on
+   the form:
+
+	Warning: Cannot modify header information - headers already sent
+	by (output started at .../SCForm/scfconfig.php:76) in
+	.../SCForm/scformproc.php on line 421
+
+   Check to make sure scfconfig.php does not have any trailing blank lines
+   following the closing "?>" at the bottom of the file.
+
+5. SCForm is working properly, except I'm getting email notifications of
+   "This form was used from an unauthorized server! ()" occasionally.
+
+   Probably web-crawlers/-spiders tripping across scformproc.php
+   directly.  In this case, there'll be no referrer, thus the empty
+   "()"s.
+
+   (Maybe some day I'll add some code to scformproc.php to ignore hits
+   with an empty referrer and all other fields empty.  That would
+   eliminate this spurious warning.)
+
+
+6. I'd like additional fields in SCForm.  Will you add them?
+
+   Not unless I feel they would be of wide-spread interest.  SCForm is
+   designed to be a simple, secure contact form.  I plan to keep it that
+   way.  (If the download stats I'm seeing, and the comments I'm
+   receiving, are any guide: The vast majority of SCForm's users like it
+   just the way it is.)
+
+
+7. I'd like additional fields in SCForm.  How do I add them?
+
+   Adding additional fields to SCForm requires modifications to the form
+   page (scform.php) and the form processor (scformproc.php).  How to do
+   that requires an understanding of PHP and HTML.  If you check
+   http://jimsun.LinxNet.com/jimboeken.html, you'll find reading
+   recommendations for both of these subjects.
+
+   WARNING: Adding extra fields, and processing for them, *may* compromise
+   SCForm's security.  SCForm is written to be secure.  If you mess with
+   it, be sure you know what you're doing!
+
+
+8. Will you create a custom version of SCForm for me?
+
+   Certainly.  Email me and we'll discuss my consulting rate.
+
+
+9. I'm using SCForm in a framed layout.  When somebody clicks the "take
+   me back" link on the response page, they get taken back to the wrong
+   frame.
+
+   You'll need to modify scfresp.php.  What you'll need to do is
+   site-specific, so I can't tell you exactly what you'll need to do.
+
+
+10. Can I use SCForm for file uploads?
+
+    Not as-delivered.  SCForm is a *contact* form.
+
+
+11. Would you add flood control to SCForm?
+
+    I don't plan to do that.  Adding flood control would require that
+    SCForm maintain some kind of database (for state/memory).  This would
+    require either a database account (e.g.: PostgreSQL, MySQL, Berkeley
+    DB, etc.) or filesystem write access by the unprivileged web server
+    process.  All of these induce complexity and create potential security
+    issues.  Both are counter to two of SCForm's primary goals: To be
+    simple and secure.
+
+    Update: It occured to me recently that I could accomplish this with
+    PHP sessions.  I'll look into it.
+
+
+12. Would you add logging to SCForm?
+
+    I don't plan to do that.  See: "Would you add flood control to
+    SCForm?" (just above) for an explanation.
+
+    If they're available to you: All the logging you should need should be
+    available in your web server's and mail server's logs.
+
+
+13. My language's alphabet has characters that show up when the web
+    form is filled-out, but not in the emailed results.  Why is that?
+
+    Probably the character set specified in scform.php is incompatible
+    with your language's character set.  Prior to SCForm-1.2.2, the
+    character set was specified as "utf-8."  This was changed to
+    "iso8859-1" in SCForm-1.2.3, allowing all Western characters to
+    render.  If your character set is Cyrillic, you probably need
+    iso8859-5, Japanese might need SHIFT_JIS or EUC-JP, etc.
+
+    If you change the charset in scform.php, don't forget to change it to
+    match in scfresp.php, as well.
+
+
+14. I've enabled CAPTCHA (tm) with $requireVerify, but I'm not getting any
+    text image.
+
+    Either your web host doesn't have GD graphic library support built
+    into PHP or you're accessing the contact page with cookies disabled.
+    Do the phpinfo() thing detailed in FAQ #1 and look for --with-gd
+    under "Configure Command" in the first section, and a "gd" section
+    further on down the page.
+
+    If you're using PHP 5 and a version of SCForm older than release
+    1.2.5, change the variable names $_HTTP_SESSION_VARS to $_SESSION in
+    the two places in scform.php, or upgrade to SCForm 1.2.5 or later.
+
+15. What is the difference between setting $formProcBlankRefOkay to "true"
+    and having an empty $formProcAllowedReferers?
+
+    An empty $formProcAllowedReferers means the referer (from where the
+    form was submitted) won't be checked at all, whether it's empty or
+    not.  Having a non-empty $formProcAllowedReferers and setting
+    $formProcBlankRefOkay = true will allow submissions when the referer
+    is empty, but will check it for validity when it's not.
+
+Original Created: 27 Jun., 2004
+         Updated: 10 Mar., 2007
