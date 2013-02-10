@@ -1,2 +1,14 @@
-﻿
-liturgy schedule             <br />- current bulletin           <br />- calendar (current events)  <br />- current homily             <br />- current reading
+﻿<div class="x-nav">
+    @{ 
+        
+        var ci = new List<N2.ContentItem>();
+        var cc = Content.Current.Item;
+        while (cc != null && !(cc is N2.Definitions.IStartPage))
+        {
+            ci.Add(cc);
+            cc = cc.Parent;
+        }
+        cc = ci[ci.Count - 1];
+    }
+@Html.Tree(cc, Content.Current.Item, 3)
+</div>

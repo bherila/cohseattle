@@ -1,0 +1,33 @@
+﻿@model Dinamico.Models.ContentPage
+
+@section BodyLayoutReplacementRows 
+{
+        <!-- hero unit -->
+        <div class="row" id="heroUnit">
+            <div class="span12 centered">
+                @{ Html.DroppableZone("Hero").Render(); }
+            </div>
+        </div>
+        <!-- /hero unit -->
+            
+            
+        <div class="row">
+            
+            <!-- sub-navigation -->
+            <div class="span2">
+                @{ Html.RenderPartial("_RightNavShared");}
+            </div>
+            <!-- /sub-navigation --> 
+            
+
+
+            <!-- main content-->
+            <div class="span10">
+                @Content.Render.Tokens("Text").Wrap(@<div id="content">@item.RenderContents()</div>)
+                @{ Html.DroppableZone("Body").Render(); }
+            </div>
+            <!-- /main content -->
+
+
+        </div><!-- /row -->
+}

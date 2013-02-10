@@ -3,14 +3,8 @@
 @{
 	Content.Define(re => 
 	{
-		re.Title = "Content Page";
+		re.Title = "Content page";
 	});
 }
 
-@section page {
-
-    @Content.Render.Tokens("Title").Wrap(@<h1>@item.RenderContents()</h1>)
-
-    @Content.Render.Tokens("Text").Wrap(@<div id="content">@item.RenderContents()</div>)
-
-}
+@Html.Partial("LayoutPartials/Content")

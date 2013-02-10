@@ -26,6 +26,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <includesetaclproviderondestination>False</includesetaclproviderondestination>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,23 +69,23 @@
     </Reference>
     <Reference Include="N2, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Library.2.4.9.2\lib\N2.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Library.2.4.12.10\lib\N2.dll</HintPath>
     </Reference>
     <Reference Include="N2.Extensions, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.2.4.9.2\lib\N2.Extensions.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.2.4.12.10\lib\N2.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="N2.Management, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.2.4.9.2\lib\N2.Management.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.2.4.12.10\lib\N2.Management.dll</HintPath>
     </Reference>
     <Reference Include="N2.Packaging, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.2.4.9.2\lib\N2.Packaging.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.2.4.12.10\lib\N2.Packaging.dll</HintPath>
     </Reference>
     <Reference Include="N2.Razor, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Razor.2.4.9.2\lib\NET40\N2.Razor.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Razor.2.4.12.10\lib\NET40\N2.Razor.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -141,12 +142,10 @@
   <ItemGroup>
     <Compile Include="Dinamico\Controllers\ContentPagesController.cs" />
     <Compile Include="Dinamico\Controllers\ContentPartsController.cs" />
-    <Compile Include="Dinamico\Controllers\DocumentViewerController.cs" />
     <Compile Include="Dinamico\Controllers\FallbackController.cs" />
     <Compile Include="Dinamico\Controllers\FreeFormController.cs" />
     <Compile Include="Dinamico\Controllers\LanguageIntersectionController.cs" />
     <Compile Include="Dinamico\Controllers\MembershipController.cs" />
-    <Compile Include="Dinamico\Controllers\RedirectController.cs" />
     <Compile Include="Dinamico\Controllers\StartPageController.cs" />
     <Compile Include="Dinamico\Controllers\TestController.cs" />
     <Compile Include="Dinamico\Defaults.cs" />
@@ -154,22 +153,21 @@
     <Compile Include="Dinamico\Models\AccountModels.cs" />
     <Compile Include="Dinamico\Models\ContentPage.cs" />
     <Compile Include="Dinamico\Models\ContentPart.cs" />
-    <Compile Include="Dinamico\Models\DocumentViewer.cs" />
     <Compile Include="Dinamico\Models\FreeForm.cs" />
     <Compile Include="Dinamico\Models\LanguageIntersection.cs" />
     <Compile Include="Dinamico\Models\PageModelBase.cs" />
     <Compile Include="Dinamico\Models\PartModelBase.cs" />
-    <Compile Include="Dinamico\Models\Redirect.cs" />
     <Compile Include="Dinamico\Models\StartPage.cs" />
     <Compile Include="Dinamico\Registrations\FreeFormRegistration.cs" />
+    <Compile Include="Dinamico\Registrations\RecursiveZoneAdapter.cs" />
     <Compile Include="Dinamico\Registrations\StartPageRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="MWMvc.Float.cs" />
     <Compile Include="Models\BootstrapPart.cs" />
-    <Compile Include="Models\RawHtml.cs" />
-    <Compile Include="Models\Tile.cs" />
+    <Compile Include="MWMvc.Float.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -185,7 +183,15 @@
     <Content Include="Content\slides.min.jquery.js" />
     <Content Include="Dinamico\N2\readme.txt" />
     <Content Include="Dinamico\readme.txt" />
+    <Content Include="Dinamico\Themes\Cloudy\Content\Elements.css" />
+    <Content Include="Dinamico\Themes\Cloudy\Content\fade.png" />
+    <Content Include="Dinamico\Themes\Cloudy\Content\home.png" />
+    <Content Include="Dinamico\Themes\Cloudy\Content\Layout.css" />
+    <Content Include="Dinamico\Themes\Cloudy\Content\Mood.css" />
+    <Content Include="Dinamico\Themes\Cloudy\Content\Site.css" />
+    <Content Include="Dinamico\Themes\Cloudy\Thumbnail.JPG" />
     <Content Include="Dinamico\Themes\COH\Content\bootstrap_params.txt" />
+    <Content Include="Dinamico\Themes\COH\Content\Features.css" />
     <Content Include="Dinamico\Themes\COH\Content\rslides.js" />
     <Content Include="Dinamico\Themes\COH\Content\style.css" />
     <Content Include="Dinamico\Themes\COH\Content\css\bootstrap.css" />
@@ -194,6 +200,12 @@
     <Content Include="Dinamico\Themes\COH\Content\img\glyphicons-halflings.png" />
     <Content Include="Dinamico\Themes\COH\Content\js\bootstrap.js" />
     <Content Include="Dinamico\Themes\COH\Content\js\bootstrap.min.js" />
+    <Content Include="Dinamico\Themes\COH\Scripts\jquery.anythingslider.js" />
+    <Content Include="Dinamico\Themes\COH\Scripts\jquery.highlight-3.js" />
+    <Content Include="Dinamico\Themes\Concrete\Content\Layout.css" />
+    <Content Include="Dinamico\Themes\Concrete\Content\Mood.css" />
+    <Content Include="Dinamico\Themes\Concrete\Content\Site.css" />
+    <Content Include="Dinamico\Themes\Concrete\Thumbnail.JPG" />
     <Content Include="Dinamico\Themes\Dark\Content\Elements.css" />
     <Content Include="Dinamico\Themes\Dark\Content\Layout.css" />
     <Content Include="Dinamico\Themes\Dark\Content\Mood.css" />
@@ -267,6 +279,54 @@
     <Content Include="Dinamico\Themes\COH\Content\rslides.css" />
     <Content Include="static\slideshow.js" />
     <Content Include="static\styles.css" />
+    <Content Include="Upload\getmap.png" />
+    <Content Include="Upload\Images\copter.jpg" />
+    <Content Include="Upload\Images\copter_cube.jpg" />
+    <Content Include="Upload\Images\copter_half.jpg" />
+    <Content Include="Upload\Images\copter_icon.jpg" />
+    <Content Include="Upload\Images\copter_original.jpg" />
+    <Content Include="Upload\Images\copter_third.jpg" />
+    <Content Include="Upload\Images\copter_thumb.jpg" />
+    <Content Include="Upload\Images\copter_wide.jpg" />
+    <Content Include="Upload\Images\fronds.jpg" />
+    <Content Include="Upload\Images\fronds_cube.jpg" />
+    <Content Include="Upload\Images\fronds_half.jpg" />
+    <Content Include="Upload\Images\fronds_icon.jpg" />
+    <Content Include="Upload\Images\fronds_original.jpg" />
+    <Content Include="Upload\Images\fronds_third.jpg" />
+    <Content Include="Upload\Images\fronds_thumb.jpg" />
+    <Content Include="Upload\Images\fronds_wide.jpg" />
+    <Content Include="Upload\Images\jetty.jpg" />
+    <Content Include="Upload\Images\jetty_cube.jpg" />
+    <Content Include="Upload\Images\jetty_half.jpg" />
+    <Content Include="Upload\Images\jetty_icon.jpg" />
+    <Content Include="Upload\Images\jetty_original.jpg" />
+    <Content Include="Upload\Images\jetty_third.jpg" />
+    <Content Include="Upload\Images\jetty_thumb.jpg" />
+    <Content Include="Upload\Images\jetty_wide.jpg" />
+    <Content Include="Upload\Images\reeds.jpg" />
+    <Content Include="Upload\Images\reeds_cube.jpg" />
+    <Content Include="Upload\Images\reeds_half.jpg" />
+    <Content Include="Upload\Images\reeds_icon.jpg" />
+    <Content Include="Upload\Images\reeds_original.jpg" />
+    <Content Include="Upload\Images\reeds_third.jpg" />
+    <Content Include="Upload\Images\reeds_thumb.jpg" />
+    <Content Include="Upload\Images\reeds_wide.jpg" />
+    <Content Include="Upload\Layout\COH_Address_Only.png" />
+    <Content Include="Upload\Layout\COH_letterhead.png" />
+    <Content Include="Upload\Layout\COH_Px.png" />
+    <Content Include="Upload\Layout\COH_Px.svg" />
+    <Content Include="Upload\Layout\Layout1000x200.png" />
+    <Content Include="Upload\Layout\Layout100x100.png" />
+    <Content Include="Upload\Layout\Layout200x200.png" />
+    <Content Include="Upload\Layout\Layout350x350.png" />
+    <Content Include="Upload\Layout\Layout870x350.png" />
+    <Content Include="Upload\legacy\ministry1.png" />
+    <Content Include="Upload\legacy\ministry2.png" />
+    <Content Include="Upload\legacy\ministry3.png" />
+    <Content Include="Upload\n2logo.png" />
+    <Content Include="Upload\n2logo_white.png" />
+    <Content Include="Upload\People\fr_paul.jpg" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -302,22 +362,15 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\StartPage\Index.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\StartPage\NotFound.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\ContentParts\Image.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\ContentParts\DocViewer.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\ContentPages\DocumentViewer.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\DocumentViewer\Index.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Shared\_SubNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\DocumentViewer\Index.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Fallback\Index.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Redirect\Index.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\ContentParts\TwoColumns.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\ContentParts\ThreeColumns.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\ContentParts\WrappedZone.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\ContentPages\Gutter.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\ContentPages\Gutter.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\ContentParts\MiniGutter.cshtml" />
+    <Content Include="Dinamico\Themes\COH\Views\ContentPages\Wide.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Link\Index.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\ContentPages\Index.cshtml" />
+    <Content Include="Dinamico\Themes\COH\Views\Shared\_RightNavShared.cshtml" />
+    <Content Include="N2\web.config" />
     <Content Include="N2\N2.zip" />
     <Content Include="Dinamico\Themes\Web.config.MVC3" />
     <Content Include="Dinamico\Themes\Web.config" />
@@ -336,6 +389,7 @@
     <Content Include="Dinamico\Themes\Default\Views\Test\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\StartPage\NotFound.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\StartPage\Index.cshtml" />
+    <Content Include="Dinamico\Themes\Default\Views\Slideshow\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\Shared\TokenTemplates\TOC.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\Shared\TokenTemplates\SubsequentSiblings.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\Shared\TokenTemplates\StartPage.cshtml" />
@@ -390,26 +444,44 @@
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\Partials\GMapAddress.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\Listing.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\Index.cshtml" />
+    <Content Include="Dinamico\Themes\Default\Views\ContentParts\ImageFloat.cshtml" />
+    <Content Include="Dinamico\Themes\Default\Views\ContentParts\ImageAndText.cshtml" />
+    <Content Include="Dinamico\Themes\Default\Views\ContentParts\Hyperlink.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\GMap.cshtml" />
+    <Content Include="Dinamico\Themes\Default\Views\ContentParts\GDocViewer.cshtml" />
+    <Content Include="Dinamico\Themes\Default\Views\ContentParts\ContentTile.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\ContentSlider.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Selection.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\News.cshtml" />
+    <Content Include="Dinamico\Themes\Default\Views\ContentPages\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Container.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\_ViewStart.cshtml" />
     <Content Include="Dinamico\Themes\Dark\Views\Web.config" />
     <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\PreContent.cshtml" />
     <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\Header.cshtml" />
+    <Content Include="Dinamico\Themes\Concrete\Views\Web.config" />
+    <Content Include="Dinamico\Themes\Concrete\Views\Shared\LayoutPartials\PreContent.cshtml" />
+    <Content Include="Dinamico\Themes\Concrete\Views\Shared\LayoutPartials\Header.cshtml" />
+    <Content Include="Dinamico\Themes\Cloudy\Views\Web.config" />
+    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\TopNavigation.cshtml" />
+    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
+    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\PreContent.cshtml" />
+    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\Header.cshtml" />
     <Content Include="App_Data\SampleContent.n2.xml.gz" />
-    <Content Include="Dinamico\Themes\Default\Views\ContentParts\Slideshow.cshtml" />
-    <Content Include="Dinamico\Themes\COH\Views\Shared\_RightNavShared.cshtml" />
+    <Content Include="App_Data\n2.sqlite.db" />
+    <Content Include="Dinamico\Themes\COH\Views\Slideshow\Index.cshtml" />
     <None Include="N2\n2cms.configuration.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\PublishProfiles\christourhopeseattle.org - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\PublishProfiles\Profile2.pubxml" />
+    <Content Include="Upload\Layout\COH_Address_Only.svgz" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="x64\" />
+    <Folder Include="x86\" />
     <Folder Include="_bin_deployableAssemblies\" />
   </ItemGroup>
   <ItemGroup>
@@ -420,13 +492,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dinamico\Themes\COH\Views\ContentPages\Index.cshtml" />
-    <None Include="Dinamico\Themes\Web.config.old" />
     <Content Include="Dinamico\Themes\COH\Views\_ViewStart.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Shared\_Layout.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Shared\Error.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Web.config" />
     <Content Include="Template.master" />
-    <Content Include="Views\ContentParts\Tile.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
