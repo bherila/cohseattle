@@ -279,6 +279,10 @@
     <Content Include="Dinamico\Themes\COH\Content\rslides.css" />
     <Content Include="static\slideshow.js" />
     <Content Include="static\styles.css" />
+    <Content Include="Upload\1366x472\lobby-people.jpg" />
+    <Content Include="Upload\1366x472\st-nicholas.jpg" />
+    <Content Include="Upload\1366x472\young-adults-1.jpg" />
+    <Content Include="Upload\1366x472\young-adults-2.jpg" />
     <Content Include="Upload\getmap.png" />
     <Content Include="Upload\Images\copter.jpg" />
     <Content Include="Upload\Images\copter_cube.jpg" />
