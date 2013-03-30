@@ -1,50 +1,39 @@
 ﻿@model Dinamico.Models.StartPage
            
-@section head {
-    <script src="/static/slideshow.js" type="text/javascript"></script>
-    @{ Html.Resources().JavaScript(Url.ThemedContent("~/Content/rslides.js")); }
-    @{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/rslides.css")); }
-    <script type="text/javascript">
-        function resizeSlideshow() { $("#ss_span").height($("#sx_span").height() - 3); }
-        $(window).resize(resizeSlideshow);
-        $(document).ready(resizeSlideshow);
-    </script>
-}
-
 @section BodyLayoutReplacementRows 
 {
-        <!-- hero unit -->
-        <div class="row" id="heroUnit">
-            <div class="span12 centered" style="margin: 0;">
-                @{ Html.DroppableZone("Hero").Render(); }
-            </div>
+    <!-- hero unit -->
+    <div class="row" id="heroUnit">
+        <div class="span12 centered" style="margin: 0;">
+            @{ Html.DroppableZone("Hero").Render(); }
         </div>
-        <!-- /hero unit -->
+    </div>
+    <!-- /hero unit -->
             
             
-        <div class="row">
+    <div class="row">
             
 
-            <!-- main content-->
-            <div class="span6">
-                @Content.Render.Tokens("Text").Wrap(@<div id="content">@item.RenderContents()</div>)
-                @{ Html.DroppableZone("Body").Render(); }
-            </div>
-            <div class="span6">
-                @{ Html.DroppableZone("Gutter").Render(); }
-            </div>
-            <!-- /main content -->
-
-
-        </div><!-- /row -->
-
-
-        <!-- footer hero unit -->
-        <div class="row">
-            <div class="span12 centered" style="margin: 0;">
-                @{ Html.DroppableZone("BelowContent").Render(); }
-            </div>
+        <!-- main content-->
+        <div class="span6">
+            @Content.Render.Tokens("Text").Wrap(@<div id="content">@item.RenderContents()</div>)
+            @{ Html.DroppableZone("Body").Render(); }
         </div>
-        <!-- /footer hero unit -->
+        <div class="span6">
+            @{ Html.DroppableZone("Gutter").Render(); }
+        </div>
+        <!-- /main content -->
+
+
+    </div><!-- /row -->
+
+
+    <!-- footer hero unit -->
+    <div class="row">
+        <div class="span12 centered" style="margin: 0;">
+            @{ Html.DroppableZone("BelowContent").Render(); }
+        </div>
+    </div>
+    <!-- /footer hero unit -->
 
 }
