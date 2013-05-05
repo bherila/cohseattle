@@ -1,4 +1,5 @@
-﻿<!doctype html>
+﻿@using N2.Web
+<!doctype html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>	<html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>	<html lang="en" class="no-js ie8"> <![endif]-->
@@ -83,15 +84,15 @@
 		<!-- logotype -->
 		<div class="row">
 			<div class="span8">
-                <p>@using (Content.BeginScope(Content.Traverse.StartPage)) {
+				<p>@using (Content.BeginScope(Content.Traverse.StartPage)) {
 					Content.Render.Image("Logotype").Wrap(@<a href="@Content.Current.Item.Url" title="@Content.Current.Item.Title">@item.RenderContents()</a>).Render();
 				}</p>
 				@Html.Tree(Content.Traverse.StartPage, parallelRoot: true, htmlAttributes: new { @class = "topnav" })
 			</div>
-            <div class="span4">
-                @{ Html.DroppableZone("Corner").Render(); }
-                @{ Html.DroppableZone("RecursiveCorner").Render(); }
-            </div>
+			<div class="span4">
+				@{ Html.DroppableZone("Corner").Render(); }
+				@{ Html.DroppableZone("RecursiveCorner").Render(); }
+			</div>
 		</div>
 		<!-- /logotype -->
 
@@ -139,7 +140,7 @@
 		}
 
 		<!-- footer -->
-        <hr />
+		<hr />
 		<div class="row">
 			<div class="span4">
 				<small><p><b>Christ Our Hope Catholic Church</b> &copy; 2011-@DateTime.Now.Year</p></small>
