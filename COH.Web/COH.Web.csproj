@@ -50,11 +50,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\FluentNHibernate.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="Iesi.Collections">
-      <HintPath>..\packages\Iesi.Collections.3.3.1.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -69,23 +71,23 @@
     </Reference>
     <Reference Include="N2, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Library.2.4.12.21\lib\N2.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Library.2.4.12.22\lib\N2.dll</HintPath>
     </Reference>
     <Reference Include="N2.Extensions, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.2.4.12.21\lib\N2.Extensions.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.2.4.12.22\lib\N2.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="N2.Management, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.2.4.12.21\lib\N2.Management.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.2.4.12.22\lib\N2.Management.dll</HintPath>
     </Reference>
     <Reference Include="N2.Packaging, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.2.4.12.21\lib\N2.Packaging.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.2.4.12.22\lib\N2.Packaging.dll</HintPath>
     </Reference>
     <Reference Include="N2.Razor, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Razor.2.4.12.21\lib\NET40\N2.Razor.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Razor.2.4.12.22\lib\NET40\N2.Razor.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -180,21 +182,17 @@
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\bootstrap\img\glyphicons-halflings-white.png" />
     <Content Include="Content\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="Content\flexslider.css" />
+    <Content Include="Content\flexslider.jquery-min.js" />
+    <Content Include="Content\flexslider.jquery.js" />
+    <Content Include="Content\images\bg_direction_nav.png" />
     <Content Include="Content\slides.jquery.js" />
     <Content Include="Content\slides.min.jquery.js" />
     <Content Include="Dinamico.csproj" />
     <Content Include="Dinamico\N2\readme.txt" />
     <Content Include="Dinamico\readme.txt" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Elements.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\fade.png" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\home.png" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Thumbnail.JPG" />
     <Content Include="Dinamico\Themes\COH\Content\bootstrap_params.txt" />
     <Content Include="Dinamico\Themes\COH\Content\Features.css" />
-    <Content Include="Dinamico\Themes\COH\Content\rslides.js" />
     <Content Include="Dinamico\Themes\COH\Content\style.css" />
     <Content Include="Dinamico\Themes\COH\Content\css\bootstrap.css" />
     <Content Include="Dinamico\Themes\COH\Content\css\bootstrap.min.css" />
@@ -204,15 +202,6 @@
     <Content Include="Dinamico\Themes\COH\Content\js\bootstrap.min.js" />
     <Content Include="Dinamico\Themes\COH\Scripts\jquery.anythingslider.js" />
     <Content Include="Dinamico\Themes\COH\Scripts\jquery.highlight-3.js" />
-    <Content Include="Dinamico\Themes\Concrete\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Concrete\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Concrete\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Concrete\Thumbnail.JPG" />
-    <Content Include="Dinamico\Themes\Dark\Content\Elements.css" />
-    <Content Include="Dinamico\Themes\Dark\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Dark\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Dark\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Dark\Thumbnail.JPG" />
     <Content Include="Dinamico\Themes\Default\Content\Boilerfoot.css" />
     <Content Include="Dinamico\Themes\Default\Content\Boilerhead.css" />
     <Content Include="Dinamico\Themes\Default\Content\Elements.css" />
@@ -225,25 +214,6 @@
     <Content Include="Dinamico\Themes\Default\Scripts\jquery.highlight-3.js" />
     <Content Include="Dinamico\Themes\Default\Scripts\Site.js" />
     <Content Include="Dinamico\Themes\Default\Thumbnail.JPG" />
-    <Content Include="Dinamico\Themes\Responsive\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Responsive\css\bootstrap.css" />
-    <Content Include="Dinamico\Themes\Responsive\css\bootstrap.min.css" />
-    <Content Include="Dinamico\Themes\Responsive\img\glyphicons-halflings-white.png" />
-    <Content Include="Dinamico\Themes\Responsive\img\glyphicons-halflings.png" />
-    <Content Include="Dinamico\Themes\Responsive\js\bootstrap.js" />
-    <Content Include="Dinamico\Themes\Responsive\js\bootstrap.min.js" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\down.png" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\Elements.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\home.png" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\TopNavigation.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Thumbnail.JPG" />
-    <Content Include="Dinamico\Themes\Terracotta\Content\fade.png" />
-    <Content Include="Dinamico\Themes\Terracotta\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Terracotta\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Terracotta\Thumbnail.JPG" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -278,7 +248,6 @@
     <Content Include="static\bullet.png" />
     <Content Include="static\devexpress.css" />
     <Content Include="static\our_family.png" />
-    <Content Include="Dinamico\Themes\COH\Content\rslides.css" />
     <Content Include="static\slideshow.js" />
     <Content Include="static\styles.css" />
     <Content Include="Upload\1366x472\lobby-people.jpg" />
@@ -330,47 +299,6 @@
     <Content Include="Upload\legacy\ministry1.png" />
     <Content Include="Upload\legacy\ministry2.png" />
     <Content Include="Upload\legacy\ministry3.png" />
-    <Content Include="Upload\music\scores\Again, We Keep this Solemn Feast.pdf" />
-    <Content Include="Upload\music\scores\All Glory, Laud, and Honor BB141.pdf" />
-    <Content Include="Upload\music\scores\All That is Hidden.pdf" />
-    <Content Include="Upload\music\scores\Be Thou My Vision.pdf" />
-    <Content Include="Upload\music\scores\Behold the Lamb.pdf" />
-    <Content Include="Upload\music\scores\Beyond The Days.pdf" />
-    <Content Include="Upload\music\scores\Bread For The World.pdf" />
-    <Content Include="Upload\music\scores\Change Our Hearts.pdf" />
-    <Content Include="Upload\music\scores\Christ be Our Light.pdf" />
-    <Content Include="Upload\music\scores\Christians Let Us Love One Another.pdf" />
-    <Content Include="Upload\music\scores\Come to the Water.pdf" />
-    <Content Include="Upload\music\scores\God Has Chosen Me.pdf" />
-    <Content Include="Upload\music\scores\Here I Am Lord.pdf" />
-    <Content Include="Upload\music\scores\Holy, Holy, Holy BB210.pdf" />
-    <Content Include="Upload\music\scores\I Heard the Voice of Jesus Say.pdf" />
-    <Content Include="Upload\music\scores\I Will Choose Christ BB527.pdf" />
-    <Content Include="Upload\music\scores\In Christ Alone.pdf" />
-    <Content Include="Upload\music\scores\Jesus Remember Me.pdf" />
-    <Content Include="Upload\music\scores\Led By The Spirit.pdf" />
-    <Content Include="Upload\music\scores\Loving and Forgiving.pdf" />
-    <Content Include="Upload\music\scores\One Love Released.pdf" />
-    <Content Include="Upload\music\scores\Open My Eyes.pdf" />
-    <Content Include="Upload\music\scores\Psalm 130 Out of the Depths.pdf" />
-    <Content Include="Upload\music\scores\Psalm 19 - Lord, You Have the Words %28Haas%29.pdf" />
-    <Content Include="Upload\music\scores\Psalm 22 My God My God.pdf" />
-    <Content Include="Upload\music\scores\Psalm 23 The Lord Is My Shepherd %28Blakesley%29.pdf" />
-    <Content Include="Upload\music\scores\Psalm 27 The Lord is my Light %28Haas%29.pdf" />
-    <Content Include="Upload\music\scores\Psalm 51 Be Merciful O Lord R&amp;A.pdf" />
-    <Content Include="Upload\music\scores\Psalm 71 I Will Sing of Your Salvation R&amp;A.pdf" />
-    <Content Include="Upload\music\scores\Psalm 91 Be With Me %28Haugen%29.pdf" />
-    <Content Include="Upload\music\scores\Psalm 95 - If Today You Hear Gods Voice %28Haas%29.pdf" />
-    <Content Include="Upload\music\scores\Song of the Body of Christ BB324.pdf" />
-    <Content Include="Upload\music\scores\Speak, Lord.pdf" />
-    <Content Include="Upload\music\scores\The Glory of These Fourty Days.pdf" />
-    <Content Include="Upload\music\scores\Theyll Know We Are Christians BB609.pdf" />
-    <Content Include="Upload\music\scores\Tis Good, Lord, To Be Here.pdf" />
-    <Content Include="Upload\music\scores\Unless A Grain of Wheat.pdf" />
-    <Content Include="Upload\music\scores\We Are Many Parts.pdf" />
-    <Content Include="Upload\music\scores\What Wonderous Love is This.pdf" />
-    <Content Include="Upload\music\scores\Where There Is Love.pdf" />
-    <Content Include="Upload\music\scores\You Alone.pdf" />
     <Content Include="Upload\n2logo.png" />
     <Content Include="Upload\n2logo_white.png" />
     <Content Include="Upload\People\fr_paul.jpg" />
@@ -418,21 +346,11 @@
     <Content Include="Dinamico\Themes\COH\Views\Link\Index.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Shared\_RightNavShared.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Slideshow\Index.cshtml" />
-    <Content Include="N2\web.config" />
-    <Content Include="N2\N2.zip" />
+    <Content Include="Dinamico\Themes\Default\Views\ContentParts\FileList.cshtml" />
+    <Content Include="App_Data\SampleContent.n2.xml.gz" />
+    <None Include="Content\flexslider.readme.md" />
     <Content Include="Dinamico\Themes\Web.config.MVC3" />
     <Content Include="Dinamico\Themes\Web.config" />
-    <Content Include="Dinamico\Themes\Terracotta\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Shared\LayoutPartials\TopNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Shared\LayoutPartials\Logotype.cshtml" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Shared\LayoutPartials\Footer.cshtml" />
-    <Content Include="Dinamico\Themes\Responsive\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Responsive\Views\Shared\LayoutPartials\Navbar.cshtml" />
-    <Content Include="Dinamico\Themes\Responsive\Views\Shared\_Layout.cshtml" />
-    <Content Include="Dinamico\Themes\Responsive\Views\ContentParts\ThreeColumns.cshtml" />
-    <Content Include="Dinamico\Themes\Responsive\Views\_ViewStart.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\Web.config" />
     <Content Include="Dinamico\Themes\Default\Views\Test\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\StartPage\NotFound.cshtml" />
@@ -498,7 +416,6 @@
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\Hyperlink.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\GMap.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\GDocViewer.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\ContentParts\FileList.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\DelimitedDataDisplay.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\ContentTile.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentParts\ContentSlider.cshtml" />
@@ -508,18 +425,8 @@
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Container.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\_ViewStart.cshtml" />
-    <Content Include="Dinamico\Themes\Dark\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\PreContent.cshtml" />
-    <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\Header.cshtml" />
-    <Content Include="Dinamico\Themes\Concrete\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Concrete\Views\Shared\LayoutPartials\PreContent.cshtml" />
-    <Content Include="Dinamico\Themes\Concrete\Views\Shared\LayoutPartials\Header.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\TopNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\PreContent.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\Header.cshtml" />
-    <Content Include="App_Data\SampleContent.n2.xml.gz" />
+    <Content Include="N2\web.config" />
+    <Content Include="N2\N2.zip" />
     <None Include="N2\n2cms.configuration.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -527,16 +434,9 @@
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\PublishProfiles\Profile2.pubxml" />
     <Content Include="Upload\Layout\COH_Address_Only.svgz" />
-    <Content Include="Upload\music\admin\OrderofMassMusic2013February.pdf" />
-    <Content Include="Upload\music\mass_parts\Mass of the Most Holy Trinity - Piano &amp; Choral.pdf" />
-    <Content Include="Upload\music\mass_parts\Mass of the Most Holy Trinity - Piano.pdf" />
-    <Content Include="Upload\music\mass_parts\MHT - Lenten Acclamation Verses Mar2013 pt 1.pdf" />
-    <Content Include="Upload\music\mass_parts\MHT - Lenten Acclamation Verses Mar2013 pt 2.pdf" />
-    <Content Include="Upload\music\mass_parts\MHT Lenten Acclamation Refrain.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Upload\music\recordings\" />
     <Folder Include="_bin_deployableAssemblies\" />
   </ItemGroup>
   <ItemGroup>

@@ -20,7 +20,7 @@
 @{ Html.Resources().JQuery(); }
 <style type="text/css">
 	.centered { text-align: center; }
-	.topnav { text-align: center; width: 100%; }
+	.topnav { text-align: left; width: 100%; margin-left: 0; }
 	.topnav>li { list-style-type: none; display: inline-block; padding-right: 1em; font-size: 120%; white-space: nowrap; font-weight: 600; margin: 0; }
 	#heroUnit { border-top: 1px solid navy; border-bottom: 1px solid navy; padding: 1px 0; margin: 0 0 1.5em 0; }
 	#heroUnitCell { margin: 0; }
@@ -82,24 +82,18 @@
 
 		<!-- logotype -->
 		<div class="row">
-			<div class="span12 centered">
-				@using (Content.BeginScope(Content.Traverse.StartPage)) {
+			<div class="span8">
+                <p>@using (Content.BeginScope(Content.Traverse.StartPage)) {
 					Content.Render.Image("Logotype").Wrap(@<a href="@Content.Current.Item.Url" title="@Content.Current.Item.Title">@item.RenderContents()</a>).Render();
-				}
-			</div>
-		</div>
-		<!-- /logotype -->
-
-
-
-		<!-- top navigation --> 
-		<div class="row">
-			<div class="span12 centered">
+				}</p>
 				@Html.Tree(Content.Traverse.StartPage, parallelRoot: true, htmlAttributes: new { @class = "topnav" })
 			</div>
+            <div class="span4">
+                @{ Html.DroppableZone("Corner").Render(); }
+                @{ Html.DroppableZone("RecursiveCorner").Render(); }
+            </div>
 		</div>
-		<!-- /top navigation --> 
-
+		<!-- /logotype -->
 
 
 		@if (IsSectionDefined("BodyLayoutReplacementRows")) { @RenderSection("BodyLayoutReplacementRows") }
@@ -134,8 +128,6 @@
 				<!-- /main content -->
 
 
-
-
 			</div><!-- /row -->
 			
 		}  @* /else *@
@@ -145,8 +137,20 @@
 			@RenderSection("page")
 			</div>
 		}
+
+		<!-- footer -->
+        <hr />
+		<div class="row">
+			<div class="span4">
+				<small><p><b>Christ Our Hope Catholic Church</b> &copy; 2011-@DateTime.Now.Year</p></small>
+			</div>
+			<div class="span8">
+				@{ Html.DroppableZone("RecursiveFooter").Render(); }
+			</div>
+		</div>
+		<!-- /footer -->
+
 	</div>
-	@if (IsSectionDefined("page")) { RenderSection("page"); }
 
 </body>
 </html>
