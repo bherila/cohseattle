@@ -71,23 +71,29 @@
     </Reference>
     <Reference Include="N2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Library.2.5.0.3\lib\N2.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Library.2.5.1-beta\lib\N2.dll</HintPath>
     </Reference>
     <Reference Include="N2.Extensions, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.0.3\lib\N2.Extensions.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="N2.IoC.Windsor3">
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.IoC.Windsor3.dll</HintPath>
     </Reference>
     <Reference Include="N2.Management, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.0.3\lib\N2.Management.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.Management.dll</HintPath>
     </Reference>
     <Reference Include="N2.Packaging, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.0.3\lib\N2.Packaging.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.Packaging.dll</HintPath>
     </Reference>
     <Reference Include="N2.Razor, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\N2CMS.Razor.2.5.0.3\lib\NET40\N2.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="N2.ReusableParts">
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.ReusableParts.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -262,6 +268,32 @@
     <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="N2\App\i18n\en.js" />
+    <Content Include="N2\App\Js\Controllers.js" />
+    <Content Include="N2\App\Js\Directives.js" />
+    <Content Include="N2\App\Js\Routes.js" />
+    <Content Include="N2\App\Js\Services.js" />
+    <Content Include="N2\App\Partials\ContentAdd.html" />
+    <Content Include="N2\App\Partials\ContentBranch.html" />
+    <Content Include="N2\App\Partials\ContentContextMenu.html" />
+    <Content Include="N2\App\Partials\ContentInfo.html" />
+    <Content Include="N2\App\Partials\ContentLanguage.html" />
+    <Content Include="N2\App\Partials\ContentPreview.html" />
+    <Content Include="N2\App\Partials\ContentPublishSchedule.html" />
+    <Content Include="N2\App\Partials\ContentScheduleDialog.html" />
+    <Content Include="N2\App\Partials\ContentSearch.html" />
+    <Content Include="N2\App\Partials\ContentTransitions.html" />
+    <Content Include="N2\App\Partials\ContentTree.html" />
+    <Content Include="N2\App\Partials\ContentVersions.html" />
+    <Content Include="N2\App\Partials\Footer.html" />
+    <Content Include="N2\App\Partials\FrameAction.html" />
+    <Content Include="N2\App\Partials\Loading.html" />
+    <Content Include="N2\App\Partials\Main.html" />
+    <Content Include="N2\App\Partials\Management.html" />
+    <Content Include="N2\App\Partials\Menu.html" />
+    <Content Include="N2\App\Partials\MenuItem.html" />
+    <Content Include="N2\App\Partials\MenuLink.html" />
+    <Content Include="N2\App\Partials\MenuSubItem.html" />
     <Content Include="N2\Content\Activity\RecentActivity.ascx" />
     <Content Include="N2\Content\AffectedItems.ascx" />
     <Content Include="N2\Content\AvailableZones.ascx" />
@@ -365,6 +397,52 @@
     <Content Include="N2\Myself\Statistics.ascx" />
     <Content Include="N2\Myself\Wizards.ascx" />
     <Content Include="N2\n2_readme.txt" />
+    <Content Include="N2\Resources\angular-1.1.5\angular-resource.min.js" />
+    <Content Include="N2\Resources\angular-1.1.5\angular.min.js" />
+    <Content Include="N2\Resources\angular-1.1.5\i18n\angular-locale_en.js" />
+    <Content Include="N2\Resources\angular-1.1.5\version.txt" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui-ieshiv.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui-ieshiv.min.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui.css" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui.min.css" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui.min.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\common\ieshiv\ieshiv.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\common\module.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\grunt.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\animate\animate.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\calendar\calendar.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\codemirror\codemirror.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\currency\currency.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\date\date.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\event\event.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\if\if.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\jq\jq.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\keypress\keypress.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\map\map.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\mask\mask.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\reset\reset.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\route\route.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\scrollfix\scrollfix.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\select2\select2.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\showhide\showhide.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\sortable\sortable.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\tinymce\tinymce.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\validate\validate.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\filters\format\format.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\filters\highlight\highlight.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\filters\inflector\inflector.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\modules\filters\unique\unique.js" />
+    <Content Include="N2\Resources\angular-ui-0.4.0\templates\template.js" />
+    <Content Include="N2\Resources\bootstrap-components\angular-strap.min.js" />
+    <Content Include="N2\Resources\bootstrap-components\bootstrap-datepicker.css" />
+    <Content Include="N2\Resources\bootstrap-components\bootstrap-datepicker.js" />
+    <Content Include="N2\Resources\bootstrap-components\bootstrap-timepicker.css" />
+    <Content Include="N2\Resources\bootstrap-components\bootstrap-timepicker.js" />
+    <Content Include="N2\Resources\bootstrap\css\bootstrap.min.css" />
+    <Content Include="N2\Resources\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="N2\Resources\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="N2\Resources\bootstrap\js\bootstrap.min.js" />
     <Content Include="N2\Resources\ckeditor\build-config.js" />
     <Content Include="N2\Resources\ckeditor\ckeditor.js" />
     <Content Include="N2\Resources\ckeditor\config.js" />
@@ -494,39 +572,6 @@
     <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
     <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\wsc.css" />
     <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\wsc.js" />
-    <Content Include="N2\Resources\ckeditor\samples\ajax.html" />
-    <Content Include="N2\Resources\ckeditor\samples\api.html" />
-    <Content Include="N2\Resources\ckeditor\samples\appendto.html" />
-    <Content Include="N2\Resources\ckeditor\samples\assets\inlineall\logo.png" />
-    <Content Include="N2\Resources\ckeditor\samples\assets\outputxhtml\outputxhtml.css" />
-    <Content Include="N2\Resources\ckeditor\samples\assets\sample.css" />
-    <Content Include="N2\Resources\ckeditor\samples\assets\sample.jpg" />
-    <Content Include="N2\Resources\ckeditor\samples\assets\uilanguages\languages.js" />
-    <Content Include="N2\Resources\ckeditor\samples\datafiltering.html" />
-    <Content Include="N2\Resources\ckeditor\samples\divreplace.html" />
-    <Content Include="N2\Resources\ckeditor\samples\index.html" />
-    <Content Include="N2\Resources\ckeditor\samples\inlineall.html" />
-    <Content Include="N2\Resources\ckeditor\samples\inlinebycode.html" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\autogrow\autogrow.html" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\dialog\assets\my_dialog.js" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\dialog\dialog.html" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\enterkey\enterkey.html" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\htmlwriter\assets\outputforflash\outputforflash.swf" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\htmlwriter\assets\outputforflash\swfobject.js" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\htmlwriter\outputforflash.html" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\htmlwriter\outputhtml.html" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\magicline\magicline.html" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\toolbar\toolbar.html" />
-    <Content Include="N2\Resources\ckeditor\samples\plugins\wysiwygarea\fullpage.html" />
-    <Content Include="N2\Resources\ckeditor\samples\readonly.html" />
-    <Content Include="N2\Resources\ckeditor\samples\replacebyclass.html" />
-    <Content Include="N2\Resources\ckeditor\samples\replacebycode.html" />
-    <Content Include="N2\Resources\ckeditor\samples\sample.css" />
-    <Content Include="N2\Resources\ckeditor\samples\sample.js" />
-    <Content Include="N2\Resources\ckeditor\samples\tabindex.html" />
-    <Content Include="N2\Resources\ckeditor\samples\uicolor.html" />
-    <Content Include="N2\Resources\ckeditor\samples\uilanguages.html" />
-    <Content Include="N2\Resources\ckeditor\samples\xhtmlstyle.html" />
     <Content Include="N2\Resources\ckeditor\skins\moono\dialog.css" />
     <Content Include="N2\Resources\ckeditor\skins\moono\dialog_ie.css" />
     <Content Include="N2\Resources\ckeditor\skins\moono\dialog_ie7.css" />
@@ -553,8 +598,10 @@
     <Content Include="N2\Resources\Css\IE6.css" />
     <Content Include="N2\Resources\Css\jquery.multiselect.css" />
     <Content Include="N2\Resources\Css\jquery.multiselect.filter.css" />
+    <Content Include="N2\Resources\Css\n2.css" />
     <Content Include="N2\Resources\Css\Parts.css" />
     <Content Include="N2\Resources\Css\Root.css" />
+    <Content Include="N2\Resources\Css\smoothness\images\animated-overlay.gif" />
     <Content Include="N2\Resources\Css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="N2\Resources\Css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="N2\Resources\Css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -568,6 +615,8 @@
     <Content Include="N2\Resources\Css\smoothness\images\ui-icons_454545_256x240.png" />
     <Content Include="N2\Resources\Css\smoothness\images\ui-icons_888888_256x240.png" />
     <Content Include="N2\Resources\Css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="N2\Resources\Css\smoothness\jquery-ui-1.10.2.custom.css" />
+    <Content Include="N2\Resources\Css\smoothness\jquery-ui-1.10.2.custom.min.css" />
     <Content Include="N2\Resources\Css\smoothness\jquery-ui-1.8.22.dialog.css" />
     <Content Include="N2\Resources\Css\smoothness\jquery-ui-1.8.22.full.css" />
     <Content Include="N2\Resources\Css\TabPanel.css" />
@@ -575,7 +624,7 @@
     <Content Include="N2\Resources\Css\themes\default.css" />
     <Content Include="N2\Resources\Css\themes\icms.css" />
     <Content Include="N2\Resources\Css\themes\ink.css" />
-    <Content Include="N2\Resources\Css\Versions.css" />
+    <Content Include="N2\Resources\Css\tree.css" />
     <Content Include="N2\Resources\fancybox\blank.gif" />
     <Content Include="N2\Resources\fancybox\fancybox_loading%402x.gif" />
     <Content Include="N2\Resources\fancybox\fancybox_loading.gif" />
@@ -591,11 +640,18 @@
     <Content Include="N2\Resources\fancybox\jquery.fancybox.css" />
     <Content Include="N2\Resources\fancybox\jquery.fancybox.js" />
     <Content Include="N2\Resources\fancybox\jquery.fancybox.pack.js" />
+    <Content Include="N2\Resources\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="N2\Resources\font-awesome\css\font-awesome.min.css" />
+    <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="N2\Resources\icons\default.html" />
     <Content Include="N2\Resources\icons\flags.css" />
     <Content Include="N2\Resources\icons\flags.png" />
+    <Content Include="N2\Resources\icons\glyphicons.css" />
+    <Content Include="N2\Resources\icons\glyphicons.png" />
     <Content Include="N2\Resources\icons\silk.css" />
     <Content Include="N2\Resources\icons\silk.png" />
     <Content Include="N2\Resources\img\ajax-loader.gif" />
+    <Content Include="N2\Resources\img\arrow-down.png" />
     <Content Include="N2\Resources\img\bg.gif" />
     <Content Include="N2\Resources\img\bg_00020.png" />
     <Content Include="N2\Resources\img\bg_00050.png" />
@@ -611,6 +667,7 @@
     <Content Include="N2\Resources\img\framed_opener.gif" />
     <Content Include="N2\Resources\img\framed_toolbar.gif" />
     <Content Include="N2\Resources\img\framed_top.gif" />
+    <Content Include="N2\Resources\img\grabber.png" />
     <Content Include="N2\Resources\img\grid_alt.gif" />
     <Content Include="N2\Resources\img\gripper.gif" />
     <Content Include="N2\Resources\img\lighten10.png" />
@@ -619,19 +676,19 @@
     <Content Include="N2\Resources\img\login_bg.gif" />
     <Content Include="N2\Resources\img\login_logo.png" />
     <Content Include="N2\Resources\img\login_panel.gif" />
-    <Content Include="N2\Resources\img\n2.gif" />
+    <Content Include="N2\Resources\img\logo.png" />
+    <Content Include="N2\Resources\img\minus.png" />
     <Content Include="N2\Resources\img\n2.png" />
     <Content Include="N2\Resources\img\part_bg.png" />
     <Content Include="N2\Resources\img\pencil.png" />
+    <Content Include="N2\Resources\img\plus.png" />
+    <Content Include="N2\Resources\img\search.png" />
     <Content Include="N2\Resources\img\separator.png" />
     <Content Include="N2\Resources\img\shading.png" />
     <Content Include="N2\Resources\img\shading_blue.png" />
     <Content Include="N2\Resources\img\shading_green.png" />
     <Content Include="N2\Resources\img\shading_purple.png" />
-    <Content Include="N2\Resources\img\SlidingCurtain_bg.png" />
-    <Content Include="N2\Resources\img\SlidingCurtain_close.png" />
-    <Content Include="N2\Resources\img\SlidingCurtain_logo.png" />
-    <Content Include="N2\Resources\img\SlidingCurtain_open.png" />
+    <Content Include="N2\Resources\img\sliding-loader.png" />
     <Content Include="N2\Resources\img\smallico\clock.png" />
     <Content Include="N2\Resources\img\smallico\close_2.png" />
     <Content Include="N2\Resources\img\smallico\home.png" />
@@ -646,6 +703,7 @@
     <Content Include="N2\Resources\img\toolbar_button_bg.png" />
     <Content Include="N2\Resources\img\toolbar_button_bg_hover.png" />
     <Content Include="N2\Resources\img\toolitem_separator.gif" />
+    <Content Include="N2\Resources\img\tools.png" />
     <Content Include="N2\Resources\img\treeview\collapsable-last.gif" />
     <Content Include="N2\Resources\img\treeview\collapsable.gif" />
     <Content Include="N2\Resources\img\treeview\expandable-last.gif" />
@@ -662,14 +720,32 @@
     <Content Include="N2\Resources\img\tv\tv-item-last.gif" />
     <Content Include="N2\Resources\img\tv\tv-item.gif" />
     <Content Include="N2\Resources\img\ui\sprite.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\animated-overlay.gif" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\jquery-ui-1.10.2.custom.min.css" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\index.html" />
+    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\js\jquery-ui-1.10.2.custom.min.js" />
     <Content Include="N2\Resources\Js\ContextMenu.js" />
     <Content Include="N2\Resources\Js\EditableTags.js" />
-    <Content Include="N2\Resources\Js\jquery-1.7.2.min.js" />
+    <Content Include="N2\Resources\Js\jquery-1.9.1.min.js" />
     <Content Include="N2\Resources\Js\jquery.editableThemeSelection.js" />
     <Content Include="N2\Resources\Js\jquery.multiselect.filter.js" />
     <Content Include="N2\Resources\Js\jquery.multiselect.js" />
-    <Content Include="N2\Resources\Js\jquery.ui\jquery-ui-personalized.min.js" />
+    <Content Include="N2\Resources\Js\n2.js" />
     <Content Include="N2\Resources\Js\parts.js" />
+    <Content Include="N2\Resources\Js\plugins\aaa.js" />
     <Content Include="N2\Resources\Js\plugins\date.js" />
     <Content Include="N2\Resources\Js\plugins\hogan-2.0.0.js" />
     <Content Include="N2\Resources\Js\plugins\jquery.cookie.js" />
@@ -694,19 +770,12 @@
     <Content Include="N2\Resources\KeepAlive\ping.aspx" />
     <Content Include="N2\Resources\syntaxhighlighter\index.html" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shAutoloader.js" />
-    <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushAppleScript.js" />
-    <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushAS3.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushBash.js" />
-    <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushColdFusion.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushCpp.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushCSharp.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushCss.js" />
-    <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushDelphi.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushDiff.js" />
-    <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushErlang.js" />
-    <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushGroovy.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushJava.js" />
-    <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushJavaFX.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushJScript.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushPerl.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushPhp.js" />
@@ -715,7 +784,6 @@
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushPython.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushRuby.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushSass.js" />
-    <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushScala.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushSql.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushVb.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushXml.js" />
@@ -723,21 +791,7 @@
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shLegacy.js" />
     <Content Include="N2\Resources\syntaxhighlighter\styles\shCore.css" />
     <Content Include="N2\Resources\syntaxhighlighter\styles\shCoreDefault.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shCoreDjango.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shCoreEclipse.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shCoreEmacs.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shCoreFadeToGrey.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shCoreMDUltra.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shCoreMidnight.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shCoreRDark.css" />
     <Content Include="N2\Resources\syntaxhighlighter\styles\shThemeDefault.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shThemeDjango.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shThemeEclipse.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shThemeEmacs.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shThemeFadeToGrey.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shThemeMDUltra.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shThemeMidnight.css" />
-    <Content Include="N2\Resources\syntaxhighlighter\styles\shThemeRDark.css" />
     <Content Include="N2\Search\ManageIndex.ascx" />
     <Content Include="N2\Tokens\TokenTemplates\Author.ascx" />
     <Content Include="N2\Tokens\TokenTemplates\Breadcrumb.ascx" />
@@ -789,6 +843,7 @@
     <Content Include="Upload\1366x472\st-nicholas.jpg" />
     <Content Include="Upload\1366x472\young-adults-1.jpg" />
     <Content Include="Upload\1366x472\young-adults-2.jpg" />
+    <Content Include="Upload\archbishop.jpg" />
     <Content Include="Upload\getmap.png" />
     <Content Include="Upload\Images\copter.jpg" />
     <Content Include="Upload\Images\copter_cube.jpg" />
@@ -822,6 +877,7 @@
     <Content Include="Upload\Images\reeds_third.jpg" />
     <Content Include="Upload\Images\reeds_thumb.jpg" />
     <Content Include="Upload\Images\reeds_wide.jpg" />
+    <Content Include="Upload\Inside_Doors_ChristOurHope.jpg" />
     <Content Include="Upload\Layout\COH_Address_Only.png" />
     <Content Include="Upload\Layout\COH_letterhead.png" />
     <Content Include="Upload\Layout\COH_Px.png" />
@@ -834,9 +890,15 @@
     <Content Include="Upload\legacy\ministry1.png" />
     <Content Include="Upload\legacy\ministry2.png" />
     <Content Include="Upload\legacy\ministry3.png" />
+    <Content Include="Upload\masses\candles.jpg" />
+    <Content Include="Upload\masses\candles_smaller.jpg" />
+    <Content Include="Upload\masses\vertical_candles.jpg" />
     <Content Include="Upload\n2logo.png" />
     <Content Include="Upload\n2logo_white.png" />
+    <Content Include="Upload\Outside_ChristOurHope.jpg" />
     <Content Include="Upload\People\fr_paul.jpg" />
+    <Content Include="Upload\stewardship_treasure.jpg" />
+    <Content Include="Upload\triduum.jpg" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1006,12 +1068,15 @@
     <Content Include="N2\Search\IndexInfo.ashx" />
     <Content Include="N2\Resources\RedirectHandler.ashx" />
     <Content Include="N2\Resources\MessageSink.ashx" />
-    <Content Include="N2\Resources\KeepAlive\Web.config" />
     <Content Include="N2\Resources\KeepAlive\Ping.ashx" />
     <Content Include="N2\Resources\Js\tinymce.ashx" />
     <Content Include="N2\Resources\Js\plugins.ashx" />
     <Content Include="N2\Resources\Js\jquery.ui.ashx" />
     <Content Include="N2\Resources\IconHandler.ashx" />
+    <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="N2\Resources\font-awesome\font\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\christourhopeseattle.org - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\PublishProfiles\Profile2.pubxml" />
@@ -1039,70 +1104,10 @@
     <Content Include="N2\Users\App_LocalResources\Users.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\sl\Users.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\sl\Password.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\sl\New.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\sl\Edit.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\ru\Users.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\ru\Password.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\ru\New.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\ru\Edit.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Users\App_LocalResources\Password.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\nl\Users.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\nl\Password.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\nl\New.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\nl\Edit.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Users\App_LocalResources\New.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\mk-MK\Users.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\mk-MK\Password.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\mk-MK\New.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\mk-MK\Edit.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\it\Users.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\it\Password.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\it\New.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\it\Edit.aspx.it.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Users\App_LocalResources\Edit.aspx.resx" />
@@ -1120,195 +1125,76 @@
     <Content Include="N2\Files\FileSystem\App_LocalResources\Directory.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Files\App_LocalResources\Default.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Files\App_LocalResources\Default.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Files\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Files\App_LocalResources\Default.aspx.nl.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Files\App_LocalResources\Default.aspx.mk.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Files\App_LocalResources\Default.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.resx" />
-    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.ru.resx" />
-    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.sl.resx" />
-    <Content Include="N2\Content\Versions\App_LocalResources\RecentVersions.ascx.resx" />
-    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.it.resx" />
     <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.mk.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.nl.resx" />
+    <Content Include="N2\Content\Versions\App_LocalResources\RecentVersions.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.mk.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.nl.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.mk.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Templates\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Settings\App_LocalResources\Default.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Settings\App_LocalResources\Default.aspx.ru.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Settings\App_LocalResources\Default.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Settings\App_LocalResources\Default.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Settings\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.ru.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.ru.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.ru.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.ru.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.ru.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Navigation.sl.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Navigation.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Navigation.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Navigation\App_LocalResources\Navigation.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Navigation.it.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\LinkTracker\App_LocalResources\UpdateReferences.aspx.resx" />
@@ -1317,31 +1203,13 @@
     <Content Include="N2\Content\LinkTracker\App_LocalResources\Default.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.nl.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.mk.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Default.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Default.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Globalization\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Default.aspx.nl.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Globalization\App_LocalResources\Default.aspx.mk.resx" />
@@ -1353,154 +1221,16 @@
     <Content Include="N2\Content\Export\App_LocalResources\Export.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.nl.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.mk.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\App_LocalResources\Toolbar.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Toolbar.ascx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Paste.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\New.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Move.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Login.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\ItemInfo.ascx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Framed.Master.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Edit.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Dependencies.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Delete.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Default.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\Copy.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\AvailableZones.ascx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\sl\AffectedItems.ascx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Toolbar.ascx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Paste.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\New.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Move.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Login.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\ItemInfo.ascx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Framed.Master.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Edit.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Dependencies.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Delete.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Default.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\Copy.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\AvailableZones.ascx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ru\AffectedItems.ascx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\App_LocalResources\Paste.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Toolbar.ascx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Paste.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\New.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Move.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Login.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\ItemInfo.ascx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Framed.Master.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Edit.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Dependencies.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Delete.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Default.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\Copy.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\AvailableZones.ascx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\nl\AffectedItems.ascx.nl.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\App_LocalResources\New.aspx.resx" />
@@ -1509,85 +1239,7 @@
     <Content Include="N2\Content\App_LocalResources\Move.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\Toolbar.ascx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\Paste.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\New.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\Move.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\Login.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\ItemInfo.ascx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\Framed.Master.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\Edit.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\Delete.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\Copy.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\AvailableZones.ascx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\mk-MK\AffectedItems.ascx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\App_LocalResources\ItemInfo.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\Toolbar.ascx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\Paste.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\New.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\Move.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\Login.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\ItemInfo.ascx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\Framed.Master.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\Edit.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\Delete.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\Default.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\Copy.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\AvailableZones.ascx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\it\AffectedItems.ascx.it.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\App_LocalResources\Framed.Master.resx" />
@@ -1608,42 +1260,6 @@
     <Content Include="N2\Content\App_LocalResources\Default.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\Toolbar.ascx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\Paste.aspx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\New.aspx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\Move.aspx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\Login.aspx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\Framed.Master.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\Edit.aspx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\Delete.aspx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\Default.aspx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\Copy.aspx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\AvailableZones.ascx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\da\AffectedItems.ascx.da.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\App_LocalResources\Copy.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
@@ -1656,22 +1272,7 @@
     <Content Include="N2\Content\Activity\App_LocalResources\RecentActivity.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Activity\App_LocalResources\Default.aspx.sl.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Activity\App_LocalResources\Default.aspx.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Activity\App_LocalResources\Default.aspx.nl.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Activity\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Activity\App_LocalResources\Default.aspx.it.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Activity\App_LocalResources\Default.aspx.da.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\App_LocalResources\Login.aspx.resx" />
