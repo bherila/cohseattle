@@ -1,26 +1,42 @@
 ﻿@model IEnumerable<N2.ContentItem>
 
 @{
-    ViewBag.Title = "404 Not Found";
+	ViewBag.Title = "404 Not Found";
 }
 
-@section main {
 
-    <div class="span8">
-        <h1>@Content.Translate["404 Not Found"]</h1>
-        <p>@Content.Translate["This is not the resource you are looking for."]</p>
-        @if (Model != null && Model.Any())
-        {
-            <h2>@Content.Translate["Similar pages"]</h2>
-            <ul>
-                @foreach (var i in Model)
-                {
-                    <li>@Html.Link(i)</li>
-                }
-            </ul>
-        }
-        <h2>@Content.Translate["Site map"]</h2>
-        @Html.Tree(takeLevels: 4)
 
-    </div>
+@section BodyLayoutReplacementRows 
+{
+	<div class="row-fluid">
+
+		<!-- main content-->
+		<div class="span6">
+			<h1>@Content.Translate["404 Not Found"]</h1>
+			<p>@Content.Translate["This is not the resource you are looking for."]</p>
+			@if (Model != null && Model.Any())
+			{
+					<h2>@Content.Translate["Similar pages"]</h2>
+					<ul>
+						@foreach (var i in Model)
+						{
+							if (i.Visible && !String.IsNullOrEmpty(i.Title))
+							 {
+								 <li>@Html.Link(i)</li>
+							 }
+						}
+					</ul>
+			}
+		</div>
+
+		<div class="span6 well">
+			<h1>@Content.Translate["Site map"]</h1>
+			@Html.Tree(takeLevels: 4)
+		</div>
+		<!-- /main content -->
+
+
+	</div>
+<!-- /row -->
 }
+

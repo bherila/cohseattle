@@ -1059,6 +1059,7 @@
     <Content Include="N2\Content\LinkTracker\UpdateReferencesTo.ashx" />
     <Content Include="N2\Content\Framed.Master" />
     <Content Include="N2\Content\Activity\Notify.ashx" />
+    <Content Include="Dinamico\Themes\COH\Views\ContentPages\News.cshtml" />
     <None Include="N2\n2cms.configuration.xsd">
       <SubType>Designer</SubType>
     </None>
