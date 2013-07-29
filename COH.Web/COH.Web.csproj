@@ -71,29 +71,31 @@
     </Reference>
     <Reference Include="N2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Library.2.5.1-beta\lib\N2.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Library.2.5.2\lib\N2.dll</HintPath>
     </Reference>
     <Reference Include="N2.Extensions, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.Extensions.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="N2.IoC.Windsor3">
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.IoC.Windsor3.dll</HintPath>
+    <Reference Include="N2.IoC.Windsor3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.IoC.Windsor3.dll</HintPath>
     </Reference>
     <Reference Include="N2.Management, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.Management.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.Management.dll</HintPath>
     </Reference>
     <Reference Include="N2.Packaging, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.Packaging.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.Packaging.dll</HintPath>
     </Reference>
     <Reference Include="N2.Razor, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Razor.2.5.0.3\lib\NET40\N2.Razor.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Razor.2.5.2\lib\NET40\N2.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="N2.ReusableParts">
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.1-beta\lib\N2.ReusableParts.dll</HintPath>
+    <Reference Include="N2.ReusableParts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.ReusableParts.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -271,7 +273,6 @@
     <Content Include="N2\App\i18n\en.js" />
     <Content Include="N2\App\Js\Controllers.js" />
     <Content Include="N2\App\Js\Directives.js" />
-    <Content Include="N2\App\Js\Routes.js" />
     <Content Include="N2\App\Js\Services.js" />
     <Content Include="N2\App\Partials\ContentAdd.html" />
     <Content Include="N2\App\Partials\ContentBranch.html" />
@@ -291,9 +292,8 @@
     <Content Include="N2\App\Partials\Main.html" />
     <Content Include="N2\App\Partials\Management.html" />
     <Content Include="N2\App\Partials\Menu.html" />
-    <Content Include="N2\App\Partials\MenuItem.html" />
-    <Content Include="N2\App\Partials\MenuLink.html" />
-    <Content Include="N2\App\Partials\MenuSubItem.html" />
+    <Content Include="N2\App\Partials\MenuNode.html" />
+    <Content Include="N2\App\Partials\MenuSubNode.html" />
     <Content Include="N2\Content\Activity\RecentActivity.ascx" />
     <Content Include="N2\Content\AffectedItems.ascx" />
     <Content Include="N2\Content\AvailableZones.ascx" />
@@ -347,22 +347,6 @@
     <Content Include="N2\Files\FileSystem\File.aspx" />
     <Content Include="N2\Files\FileSystem\FileUpload.ascx" />
     <Content Include="N2\Files\FileSystem\FileUpload.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\canvas-to-blob.min.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\css\jquery.fileupload-ui.css" />
-    <Content Include="N2\Files\FileSystem\fileupload\css\style.css" />
-    <Content Include="N2\Files\FileSystem\fileupload\img\loading.gif" />
-    <Content Include="N2\Files\FileSystem\fileupload\img\progressbar.gif" />
-    <Content Include="N2\Files\FileSystem\fileupload\js\cors\jquery.postmessage-transport.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\js\cors\jquery.xdr-transport.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\js\jquery.fileupload-ip.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\js\jquery.fileupload-ui.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\js\jquery.fileupload.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\js\jquery.iframe-transport.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\js\locale.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\js\main.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\js\vendor\jquery.ui.widget.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\load-image.min.js" />
-    <Content Include="N2\Files\FileSystem\fileupload\tmpl.min.js" />
     <Content Include="N2\Files\Js\FileSelection.js" />
     <Content Include="N2\Files\Js\jquery.color.js" />
     <Content Include="N2\Files\Js\jquery.Jcrop.min.js" />
@@ -720,6 +704,21 @@
     <Content Include="N2\Resources\img\tv\tv-item-last.gif" />
     <Content Include="N2\Resources\img\tv\tv-item.gif" />
     <Content Include="N2\Resources\img\ui\sprite.png" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\css\jquery.fileupload-ui-noscript.css" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\css\jquery.fileupload-ui.css" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\css\style.css" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\app.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.fileupload-angular.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.fileupload-audio.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.fileupload-image.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.fileupload-process.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.fileupload-ui.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.fileupload-validate.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.fileupload-video.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.fileupload.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.iframe-transport.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\main.js" />
+    <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\vendor\jquery.ui.widget.js" />
     <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\animated-overlay.gif" />
     <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -739,10 +738,12 @@
     <Content Include="N2\Resources\jquery-ui-1.10.2.custom\js\jquery-ui-1.10.2.custom.min.js" />
     <Content Include="N2\Resources\Js\ContextMenu.js" />
     <Content Include="N2\Resources\Js\EditableTags.js" />
+    <Content Include="N2\Resources\Js\frameInteraction.js" />
     <Content Include="N2\Resources\Js\jquery-1.9.1.min.js" />
     <Content Include="N2\Resources\Js\jquery.editableThemeSelection.js" />
     <Content Include="N2\Resources\Js\jquery.multiselect.filter.js" />
     <Content Include="N2\Resources\Js\jquery.multiselect.js" />
+    <Content Include="N2\Resources\Js\less-1.4.1.min.js" />
     <Content Include="N2\Resources\Js\n2.js" />
     <Content Include="N2\Resources\Js\parts.js" />
     <Content Include="N2\Resources\Js\plugins\aaa.js" />
@@ -945,6 +946,7 @@
     <Content Include="Dinamico\Themes\COH\Views\Slideshow\Index.cshtml" />
     <Content Include="App_Data\SampleContent.n2.xml.gz" />
     <None Include="Content\flexslider.readme.md" />
+    <Content Include="Dinamico\Themes\COH\Views\ContentPages\News.cshtml" />
     <Content Include="Dinamico\Themes\Web.config.MVC3" />
     <Content Include="Dinamico\Themes\Web.config" />
     <Content Include="Dinamico\Themes\Terracotta\Views\Web.config" />
@@ -1046,6 +1048,7 @@
     <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
     <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\PreContent.cshtml" />
     <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\Header.cshtml" />
+    <Content Include="Dinamico.wpp.targets" />
     <Content Include="N2\Myself\Analytics\Views\Web.config" />
     <Content Include="N2\log4net.config" />
     <Content Include="N2\Installation\UpgradeVersion.ashx" />
@@ -1059,7 +1062,6 @@
     <Content Include="N2\Content\LinkTracker\UpdateReferencesTo.ashx" />
     <Content Include="N2\Content\Framed.Master" />
     <Content Include="N2\Content\Activity\Notify.ashx" />
-    <Content Include="Dinamico\Themes\COH\Views\ContentPages\News.cshtml" />
     <None Include="N2\n2cms.configuration.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -1082,6 +1084,7 @@
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\PublishProfiles\Profile2.pubxml" />
     <Content Include="Upload\Layout\COH_Address_Only.svgz" />
+    <None Include="Properties\PublishProfiles\Profile3.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -1102,16 +1105,10 @@
     <Content Include="Template.master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\Users.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\Password.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\New.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Users\App_LocalResources\Edit.aspx.resx" />
+    <Content Include="N2\Users\App_LocalResources\New.aspx.resx" />
+    <Content Include="N2\Users\App_LocalResources\Password.aspx.resx" />
+    <Content Include="N2\Users\App_LocalResources\Users.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Myself\App_LocalResources\Wizards.ascx.resx" />

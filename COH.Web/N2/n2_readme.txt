@@ -51,7 +51,6 @@ Prepare_AllDependencies.bat should do this for you. The examples:
 CONTRIBUTORS
 
 * Cristian Libardo
-* Benjamin Herila
 * Sten Johanneson
 * Michele Scaramal
 * Martijn Rasenberg
