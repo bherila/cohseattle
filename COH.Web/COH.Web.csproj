@@ -71,23 +71,23 @@
     </Reference>
     <Reference Include="N2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Library.2.5.2\lib\N2.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Library.2.5.3\lib\N2.dll</HintPath>
     </Reference>
     <Reference Include="N2.Extensions, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.Extensions.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="N2.IoC.Windsor3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.IoC.Windsor3.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.IoC.Windsor3.dll</HintPath>
     </Reference>
     <Reference Include="N2.Management, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.Management.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.Management.dll</HintPath>
     </Reference>
     <Reference Include="N2.Packaging, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.Packaging.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.Packaging.dll</HintPath>
     </Reference>
     <Reference Include="N2.Razor, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -95,7 +95,7 @@
     </Reference>
     <Reference Include="N2.ReusableParts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.2\lib\N2.ReusableParts.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.ReusableParts.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -1049,6 +1049,8 @@
     <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\PreContent.cshtml" />
     <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\Header.cshtml" />
     <Content Include="Dinamico.wpp.targets" />
+    <Content Include="N2\web.config" />
+    <Content Include="N2\N2.zip" />
     <Content Include="N2\Myself\Analytics\Views\Web.config" />
     <Content Include="N2\log4net.config" />
     <Content Include="N2\Installation\UpgradeVersion.ashx" />
@@ -1065,7 +1067,6 @@
     <None Include="N2\n2cms.configuration.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="N2\Web.config" />
     <Content Include="N2\Top.master" />
     <Content Include="N2\Simple.master" />
     <Content Include="N2\Search\IndexInfo.ashx" />
@@ -1105,10 +1106,13 @@
     <Content Include="Template.master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\Edit.aspx.resx" />
-    <Content Include="N2\Users\App_LocalResources\New.aspx.resx" />
-    <Content Include="N2\Users\App_LocalResources\Password.aspx.resx" />
     <Content Include="N2\Users\App_LocalResources\Users.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="N2\Users\App_LocalResources\New.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="N2\Users\App_LocalResources\Edit.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Myself\App_LocalResources\Wizards.ascx.resx" />
@@ -1129,10 +1133,8 @@
     <Content Include="N2\Files\App_LocalResources\Default.aspx.mk.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Versions\App_LocalResources\RecentVersions.ascx.resx" />

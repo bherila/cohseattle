@@ -5,5 +5,4 @@ bin
 *.user
 *.orig
 COH.Web/Upload/music/scores/
-COH.Assets/
 COH.Web/App_Data/Temp/
