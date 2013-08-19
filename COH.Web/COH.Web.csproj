@@ -71,31 +71,31 @@
     </Reference>
     <Reference Include="N2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Library.2.5.3\lib\N2.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Library.2.5.6\lib\N2.dll</HintPath>
     </Reference>
     <Reference Include="N2.Extensions, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.Extensions.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="N2.IoC.Windsor3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.IoC.Windsor3.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.IoC.Windsor3.dll</HintPath>
     </Reference>
     <Reference Include="N2.Management, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.Management.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.Management.dll</HintPath>
     </Reference>
     <Reference Include="N2.Packaging, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.Packaging.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.Packaging.dll</HintPath>
     </Reference>
     <Reference Include="N2.Razor, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Razor.2.5.2\lib\NET40\N2.Razor.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Razor.2.5.6\lib\NET40\N2.Razor.dll</HintPath>
     </Reference>
     <Reference Include="N2.ReusableParts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.3\lib\N2.ReusableParts.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.ReusableParts.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -196,7 +196,6 @@
     <Content Include="Content\images\bg_direction_nav.png" />
     <Content Include="Content\slides.jquery.js" />
     <Content Include="Content\slides.min.jquery.js" />
-    <Content Include="Dinamico.csproj" />
     <Content Include="Dinamico\N2\readme.txt" />
     <Content Include="Dinamico\readme.txt" />
     <Content Include="Dinamico\Themes\Cloudy\Content\Elements.css" />
@@ -351,9 +350,7 @@
     <Content Include="N2\Files\Js\jquery.color.js" />
     <Content Include="N2\Files\Js\jquery.Jcrop.min.js" />
     <Content Include="N2\Files\Js\jquery.MultiFile.js" />
-    <Content Include="N2\history.txt" />
-    <Content Include="N2\howto_develop.txt" />
-    <Content Include="N2\howto_install.txt" />
+    <Content Include="N2\Files\Rebuild.aspx" />
     <Content Include="N2\Installation\Begin\Default.aspx" />
     <Content Include="N2\Installation\dbmigrator.aspx" />
     <Content Include="N2\Installation\Default.aspx" />
@@ -364,7 +361,6 @@
     <Content Include="N2\Installation\Rebase.aspx" />
     <Content Include="N2\Installation\Upgrade.aspx" />
     <Content Include="N2\Installation\UpgradeVersions.aspx" />
-    <Content Include="N2\license.txt" />
     <Content Include="N2\Login.aspx" />
     <Content Include="N2\Myself\Activity.ascx" />
     <Content Include="N2\Myself\Analytics\Resources\excanvas.js" />
@@ -380,7 +376,6 @@
     <Content Include="N2\Myself\Root.aspx" />
     <Content Include="N2\Myself\Statistics.ascx" />
     <Content Include="N2\Myself\Wizards.ascx" />
-    <Content Include="N2\n2_readme.txt" />
     <Content Include="N2\Resources\angular-1.1.5\angular-resource.min.js" />
     <Content Include="N2\Resources\angular-1.1.5\angular.min.js" />
     <Content Include="N2\Resources\angular-1.1.5\i18n\angular-locale_en.js" />
@@ -447,12 +442,15 @@
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
@@ -469,8 +467,12 @@
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
     <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
@@ -508,19 +510,75 @@
     <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\mode\xml.js" />
     <Content Include="N2\Resources\ckeditor\plugins\codemirror\lang\en.js" />
     <Content Include="N2\Resources\ckeditor\plugins\codemirror\plugin.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
     <Content Include="N2\Resources\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\div\dialogs\div.js" />
     <Content Include="N2\Resources\ckeditor\plugins\fakeobjects\images\spacer.gif" />
     <Content Include="N2\Resources\ckeditor\plugins\filebrowser\plugin.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\forms\images\hiddenfield.gif" />
     <Content Include="N2\Resources\ckeditor\plugins\icons.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\iframe\images\placeholder.png" />
     <Content Include="N2\Resources\ckeditor\plugins\image\dialogs\image.js" />
     <Content Include="N2\Resources\ckeditor\plugins\image\images\noimage.png" />
     <Content Include="N2\Resources\ckeditor\plugins\link\dialogs\anchor.js" />
     <Content Include="N2\Resources\ckeditor\plugins\link\dialogs\link.js" />
     <Content Include="N2\Resources\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
     <Content Include="N2\Resources\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
     <Content Include="N2\Resources\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\preview\preview.html" />
     <Content Include="N2\Resources\ckeditor\plugins\scayt\dialogs\options.js" />
     <Content Include="N2\Resources\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
@@ -528,13 +586,19 @@
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
@@ -542,20 +606,35 @@
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
     <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
     <Content Include="N2\Resources\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
     <Content Include="N2\Resources\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="N2\Resources\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="N2\Resources\ckeditor\plugins\templates\templates\images\template3.gif" />
     <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\tmp.html" />
     <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
     <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\wsc.css" />
     <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
     <Content Include="N2\Resources\ckeditor\skins\moono\dialog.css" />
     <Content Include="N2\Resources\ckeditor\skins\moono\dialog_ie.css" />
     <Content Include="N2\Resources\ckeditor\skins\moono\dialog_ie7.css" />
@@ -820,7 +899,6 @@
     <Content Include="N2\Tokens\TokenTemplates\StartPage.ascx" />
     <Content Include="N2\Tokens\TokenTemplates\SyntaxHighlighter.ascx" />
     <Content Include="N2\Tokens\TokenTemplates\TOC.ascx" />
-    <Content Include="N2\upgrade.txt" />
     <Content Include="N2\Users\Activity.aspx" />
     <Content Include="N2\Users\Css\Membership.css" />
     <Content Include="N2\Users\Edit.aspx" />
@@ -1036,7 +1114,6 @@
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\News.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Container.cshtml" />
-    <Content Include="Dinamico\Themes\Default\Views\_ViewStart.cshtml" />
     <Content Include="Dinamico\Themes\Dark\Views\Web.config" />
     <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\PreContent.cshtml" />
     <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\Header.cshtml" />
@@ -1048,25 +1125,8 @@
     <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
     <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\PreContent.cshtml" />
     <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\Header.cshtml" />
-    <Content Include="Dinamico.wpp.targets" />
-    <Content Include="N2\web.config" />
-    <Content Include="N2\N2.zip" />
-    <Content Include="N2\Myself\Analytics\Views\Web.config" />
-    <Content Include="N2\log4net.config" />
-    <Content Include="N2\Installation\UpgradeVersion.ashx" />
-    <Content Include="N2\Installation\system.diagnostics.trace.config" />
-    <Content Include="N2\Installation\log4net.config" />
-    <Content Include="N2\Files\Resize.ashx" />
-    <Content Include="N2\Files\FileSystem\UploadFile.ashx" />
-    <Content Include="N2\Content\Navigation\SortUp.ashx" />
-    <Content Include="N2\Content\Navigation\SortDown.ashx" />
-    <Content Include="N2\Content\Navigation\LoadTree.ashx" />
-    <Content Include="N2\Content\LinkTracker\UpdateReferencesTo.ashx" />
-    <Content Include="N2\Content\Framed.Master" />
-    <Content Include="N2\Content\Activity\Notify.ashx" />
-    <None Include="N2\n2cms.configuration.xsd">
-      <SubType>Designer</SubType>
-    </None>
+    <Content Include="Dinamico\Themes\_ViewStart.cshtml" />
+    <Content Include="N2\Web.config" />
     <Content Include="N2\Top.master" />
     <Content Include="N2\Simple.master" />
     <Content Include="N2\Search\IndexInfo.ashx" />
@@ -1081,6 +1141,19 @@
     <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.ttf" />
     <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.eot" />
     <Content Include="N2\Resources\font-awesome\font\FontAwesome.otf" />
+    <Content Include="N2\Myself\Analytics\Views\Web.config" />
+    <Content Include="N2\log4net.config" />
+    <Content Include="N2\Installation\UpgradeVersion.ashx" />
+    <Content Include="N2\Installation\system.diagnostics.trace.config" />
+    <Content Include="N2\Installation\log4net.config" />
+    <Content Include="N2\Files\Resize.ashx" />
+    <Content Include="N2\Files\FileSystem\UploadFile.ashx" />
+    <Content Include="N2\Content\Navigation\SortUp.ashx" />
+    <Content Include="N2\Content\Navigation\SortDown.ashx" />
+    <Content Include="N2\Content\Navigation\LoadTree.ashx" />
+    <Content Include="N2\Content\LinkTracker\UpdateReferencesTo.ashx" />
+    <Content Include="N2\Content\Framed.master" />
+    <Content Include="N2\Content\Activity\Notify.ashx" />
     <None Include="Properties\PublishProfiles\christourhopeseattle.org - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\PublishProfiles\Profile2.pubxml" />
@@ -1092,7 +1165,9 @@
     <Folder Include="_bin_deployableAssemblies\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\n2_host.config" />
@@ -1133,8 +1208,10 @@
     <Content Include="N2\Files\App_LocalResources\Default.aspx.mk.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.mk.resx" />
     <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.mk.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="N2\Content\Versions\App_LocalResources\RecentVersions.ascx.resx" />
