@@ -26,6 +26,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+	<BaseIntermediateOutputPath>c:\tmp\cohweb.obj</BaseIntermediateOutputPath>
     <includesetaclproviderondestination>False</includesetaclproviderondestination>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -71,35 +72,35 @@
     </Reference>
     <Reference Include="N2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Library.2.5.6\lib\N2.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Library.2.5.6.1\lib\N2.dll</HintPath>
     </Reference>
     <Reference Include="N2.Extensions, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.Extensions.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="N2.IoC.Windsor3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.IoC.Windsor3.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.IoC.Windsor3.dll</HintPath>
     </Reference>
     <Reference Include="N2.Management, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.Management.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.Management.dll</HintPath>
     </Reference>
     <Reference Include="N2.Packaging, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.Packaging.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.Packaging.dll</HintPath>
     </Reference>
     <Reference Include="N2.Razor, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Razor.2.5.6\lib\NET40\N2.Razor.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Razor.2.5.6.1\lib\NET40\N2.Razor.dll</HintPath>
     </Reference>
     <Reference Include="N2.ReusableParts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6\lib\N2.ReusableParts.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.ReusableParts.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NHibernate.3.3.3.4000\lib\Net35\NHibernate.dll</HintPath>
+      <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
@@ -818,7 +819,7 @@
     <Content Include="N2\Resources\Js\ContextMenu.js" />
     <Content Include="N2\Resources\Js\EditableTags.js" />
     <Content Include="N2\Resources\Js\frameInteraction.js" />
-    <Content Include="N2\Resources\Js\jquery-1.9.1.min.js" />
+    <Content Include="N2\Resources\Js\jquery-1.10.2.min.js" />
     <Content Include="N2\Resources\Js\jquery.editableThemeSelection.js" />
     <Content Include="N2\Resources\Js\jquery.multiselect.filter.js" />
     <Content Include="N2\Resources\Js\jquery.multiselect.js" />
@@ -848,6 +849,25 @@
     <Content Include="N2\Resources\Js\plugins\n2.js" />
     <Content Include="N2\Resources\Js\UrlSelection.js" />
     <Content Include="N2\Resources\KeepAlive\ping.aspx" />
+    <Content Include="N2\Resources\mediaelement-js\background.png" />
+    <Content Include="N2\Resources\mediaelement-js\bigplay.png" />
+    <Content Include="N2\Resources\mediaelement-js\bigplay.svg" />
+    <Content Include="N2\Resources\mediaelement-js\controls-ted.png" />
+    <Content Include="N2\Resources\mediaelement-js\controls-wmp-bg.png" />
+    <Content Include="N2\Resources\mediaelement-js\controls-wmp.png" />
+    <Content Include="N2\Resources\mediaelement-js\controls.png" />
+    <Content Include="N2\Resources\mediaelement-js\controls.svg" />
+    <Content Include="N2\Resources\mediaelement-js\flashmediaelement-cdn.swf" />
+    <Content Include="N2\Resources\mediaelement-js\flashmediaelement.swf" />
+    <Content Include="N2\Resources\mediaelement-js\loading.gif" />
+    <Content Include="N2\Resources\mediaelement-js\mediaelement-and-player.min.js" />
+    <Content Include="N2\Resources\mediaelement-js\mediaelement.min.js" />
+    <Content Include="N2\Resources\mediaelement-js\mediaelementplayer.css" />
+    <Content Include="N2\Resources\mediaelement-js\mediaelementplayer.js" />
+    <Content Include="N2\Resources\mediaelement-js\mediaelementplayer.min.css" />
+    <Content Include="N2\Resources\mediaelement-js\mediaelementplayer.min.js" />
+    <Content Include="N2\Resources\mediaelement-js\mejs-skins.css" />
+    <Content Include="N2\Resources\mediaelement-js\sizzle.min.js" />
     <Content Include="N2\Resources\syntaxhighlighter\index.html" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shAutoloader.js" />
     <Content Include="N2\Resources\syntaxhighlighter\scripts\shBrushBash.js" />
@@ -1181,178 +1201,64 @@
     <Content Include="Template.master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\Users.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\New.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Users\App_LocalResources\Edit.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Myself\App_LocalResources\Wizards.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Files\FileSystem\App_LocalResources\FileUpload.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Files\FileSystem\App_LocalResources\File.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Files\FileSystem\App_LocalResources\Directory.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Files\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Files\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Versions\App_LocalResources\RecentVersions.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Templates\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Settings\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Settings\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Navigation.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Navigation\App_LocalResources\Navigation.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\LinkTracker\App_LocalResources\UpdateReferences.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\LinkTracker\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Globalization\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Export\App_LocalResources\ItemXmlImport.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Export\App_LocalResources\Export.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\Toolbar.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\Paste.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\New.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\Move.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\ItemInfo.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\Framed.Master.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\EditRecursive.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\Edit.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\Dependencies.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\Delete.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\Default.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\Copy.aspx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\AvailableZones.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\App_LocalResources\AffectedItems.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Activity\App_LocalResources\RecentActivity.ascx.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\Content\Activity\App_LocalResources\Default.aspx.mk.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="N2\App_LocalResources\Login.aspx.resx" />
+    <EmbeddedResource Include="N2\App_LocalResources\Login.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Activity\App_LocalResources\Default.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Activity\App_LocalResources\RecentActivity.ascx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\AffectedItems.ascx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\AvailableZones.ascx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\Copy.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\Delete.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\Dependencies.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\Edit.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\EditRecursive.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\Framed.Master.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\ItemInfo.ascx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\Move.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\New.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\Paste.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\App_LocalResources\Toolbar.ascx.resx" />
+    <EmbeddedResource Include="N2\Content\Export\App_LocalResources\Default.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Export\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Export\App_LocalResources\Export.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Export\App_LocalResources\ItemXmlImport.ascx.resx" />
+    <EmbeddedResource Include="N2\Content\Globalization\App_LocalResources\Default.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Globalization\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.resx" />
+    <EmbeddedResource Include="N2\Content\LinkTracker\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\LinkTracker\App_LocalResources\UpdateReferences.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Navigation.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Navigation.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Search.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Search.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Table.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Table.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Security\App_LocalResources\Default.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Security\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Settings\App_LocalResources\Default.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Settings\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Templates\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Trash\App_LocalResources\Default.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Trash\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Versions\App_LocalResources\Default.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Versions\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Content\Versions\App_LocalResources\RecentVersions.ascx.resx" />
+    <EmbeddedResource Include="N2\Content\Wizard\App_LocalResources\Default.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Content\Wizard\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Files\App_LocalResources\Default.aspx.mk.resx" />
+    <EmbeddedResource Include="N2\Files\App_LocalResources\Default.aspx.resx" />
+    <EmbeddedResource Include="N2\Files\FileSystem\App_LocalResources\Directory.aspx.resx" />
+    <EmbeddedResource Include="N2\Files\FileSystem\App_LocalResources\File.aspx.resx" />
+    <EmbeddedResource Include="N2\Files\FileSystem\App_LocalResources\FileUpload.ascx.resx" />
+    <EmbeddedResource Include="N2\Myself\App_LocalResources\Wizards.ascx.resx" />
+    <EmbeddedResource Include="N2\Users\App_LocalResources\Edit.aspx.resx" />
+    <EmbeddedResource Include="N2\Users\App_LocalResources\New.aspx.resx" />
+    <EmbeddedResource Include="N2\Users\App_LocalResources\Users.aspx.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
