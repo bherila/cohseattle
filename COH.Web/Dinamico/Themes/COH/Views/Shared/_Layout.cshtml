@@ -14,26 +14,29 @@
 <link rel="apple-touch-icon" href="@Url.ThemedContent("~/apple-touch-icon.png")" />
 <link rel="canonical" href="@(Content.Data.Url ?? Request.RawUrl)" />
 <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-@{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/css/bootstrap.css")); }
+	@*@{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/css/bootstrap.css")); }*@
+	@{ Html.Resources().StyleSheet("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/css/bootstrap.min.css"); }
+	@{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/css/bootstrap3.cerulean.min.css")); }
+	@{ Html.Resources().JavaScript("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"); }
 @{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/style.css")); }
 @{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/features.css")); }
 <link href="/Content/flexslider.css" rel="stylesheet" type="text/css" />
 @{ Html.Resources().JQuery(); }
-<style type="text/css">
-	.centered { text-align: center; }
-	.topnav { text-align: left; width: 100%; margin-left: 0; }
-	.topnav>li { list-style-type: none; display: inline-block; padding-right: 1em; font-size: 120%; white-space: nowrap; font-weight: 600; margin: 0; }
-	#heroUnit { border-top: 1px solid navy; border-bottom: 1px solid navy; padding: 1px 0; margin: 0 0 1.5em 0; }
-	#heroUnitCell { margin: 0; }
-	.imageAndText-inner .span9:last-child { padding-left: 2em; }
-	.imageAndText-inner .span9:first-child { padding-right: 2em; }
+	<style type="text/css">
+		body, html, p, h1, h2, h3, h4, h5, h6, h7 { font-family: Lato; }
+		 .centered { text-align: center; }
+		.topnav { text-align: left; width: 100%; padding-left: 0; }
+		.topnav>li { list-style-type: none; display: inline-block; padding-right: 1em; font-size: 120%; white-space: nowrap; font-weight: 600; margin: 0; }
+		#heroUnit { border-top: 1px solid navy; border-bottom: 1px solid navy; padding: 1px 0; margin: 0 0 1.5em 0; }
+		#heroUnitCell { margin: 0; }
+		.imageAndText-inner .span9:last-child { padding-left: 2em; }
+		.imageAndText-inner .span9:first-child { padding-right: 2em; }
 
-	.x-nav > ul { margin: 0; list-style-type: none; margin-right: 1em; }
-	.x-nav > ul > li { border-top: 1px solid #ddd; text-transform: uppercase; margin: 0.6em 0; padding: 0.6em 0; }
-	.x-nav > ul > li > a { color: #666; }
-	.x-nav > ul > li > ul { text-transform: none; list-style-type: square; }
-		
-</style>
+		.x-nav > ul { padding: 0; list-style-type: none; margin-right: 1em; }
+		.x-nav > ul > li { border-top: 1px solid #ddd; text-transform: uppercase; margin: 0.6em 0; padding: 0.6em 0; }
+		.x-nav > ul > li > a { color: #666; }
+		.x-nav > ul > li > ul {padding-left: 1.6em; text-transform: none; list-style-type: square; }
+	</style>
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -93,13 +96,13 @@
 
 		<!-- logotype -->
 		<div class="row">
-			<div class="span8">
+			<div class="col-sm-8">
 				<p>@using (Content.BeginScope(Content.Traverse.StartPage)) {
 					Content.Render.Image("Logotype").Wrap(@<a href="@Content.Current.Item.Url" title="@Content.Current.Item.Title">@item.RenderContents()</a>).Render();
 				}</p>
 				@Html.Tree(Content.Traverse.StartPage, parallelRoot: true, htmlAttributes: new { @class = "topnav" })
 			</div>
-			<div class="span4">
+			<div class="col-sm-4">
 				@{ Html.DroppableZone("Corner").Render(); }
 				@{ Html.DroppableZone("RecursiveCorner").Render(); }
 			</div>
@@ -112,7 +115,7 @@
 		{
 			<!-- hero unit -->
 			<div class="row" id="heroUnitRow">
-				<div class="span12 centered" id="heroUnitCell">
+				<div class="col-xs-12 centered" id="heroUnitCell">
 					@{ Html.DroppableZone("Hero").Render(); }
 				</div>
 			</div>
@@ -123,7 +126,7 @@
 			
 			
 				<!-- sub-navigation -->
-				<div class="span2">
+				<div class="col-sm-2">
 					@{ Html.RenderPartial("_RightNavShared");}
 				</div>
 				<!-- /sub-navigation --> 
@@ -131,7 +134,7 @@
 
 
 				<!-- main content-->
-				<div class="span10">
+				<div class="col-sm-10">
 					@Content.Render.Tokens("Text").Wrap(@<div id="content">@item.RenderContents()</div>)
 					@{ Html.DroppableZone("Body").Render(); }
 					@RenderBody()
@@ -152,11 +155,11 @@
 		<!-- footer -->
 		<hr />
 		<div class="row">
-			<div class="span4">
+			<div class="col-sm-4">
 				<p><small><b>Christ Our Hope Catholic Church</b> &copy; 2011-@DateTime.Now.Year</small></p>
 				<a href="http://www.iubenda.com/privacy-policy/430301" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "http://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
 			</div>
-			<div class="span8">
+			<div class="col-sm-8">
 				@{ Html.DroppableZone("RecursiveFooter").Render(); }
 			</div>
 		</div>

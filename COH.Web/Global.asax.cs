@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
-using NHibernate;
 using FluentNHibernate.Cfg;
+using NHibernate;
 
 namespace MWMvc
 {
@@ -40,7 +36,7 @@ namespace MWMvc
               )
               .Mappings(m =>
                   m.FluentMappings.AddFromAssemblyOf<MvcApplication>())
-              .ExposeConfiguration(cfg => { new NHibernate.Tool.hbm2ddl.SchemaUpdate(cfg).Execute(false, true); })
+              .ExposeConfiguration(cfg => new NHibernate.Tool.hbm2ddl.SchemaUpdate(cfg).Execute(false, true))
               .BuildSessionFactory();
         }
 

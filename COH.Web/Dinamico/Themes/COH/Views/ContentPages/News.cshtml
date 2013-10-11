@@ -16,7 +16,7 @@
 {
 	<!-- hero unit -->
 	<div class="row" id="heroUnitRow">
-		<div class="span12 centered" id="heroUnitCell">
+		<div class="col-xs-12 centered" id="heroUnitCell">
 			@{ Html.DroppableZone("Hero").Render(); }
 		</div>
 	</div>
@@ -26,19 +26,19 @@
 	<div class="row">
 
 		<!-- sub-navigation -->
-		<div class="span2">
+		<div class="col-sm-2">
 			@{ Html.RenderPartial("_RightNavShared");}
 		</div>
 		<!-- /sub-navigation -->
 
 		<!-- main content-->
-		<div class="span6">
+		<div class="col-sm-6">
 			@Content.Render.Tokens("Title").Wrap(@<h1>@item.RenderContents()</h1>)
 			<h2>Published @Content.Current.Item.Published.Value.ToString("MMM d, yyyy")</h2>
 			@Content.Render.Tokens("Text").Wrap(@<div id="content">@item.RenderContents()</div>)
 			@{ Html.DroppableZone("Body").Render(); }
 		</div>
-		<div class="span4">
+		<div class="col-sm-4">
 			@{ Html.DroppableZone("Gutter").Render(); }
 			@{ Html.DroppableZone("RecursiveGutter").Render(); }
 

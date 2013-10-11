@@ -26,8 +26,9 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-	<BaseIntermediateOutputPath>c:\tmp\cohweb.obj</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>c:\tmp\cohweb.obj</BaseIntermediateOutputPath>
     <includesetaclproviderondestination>False</includesetaclproviderondestination>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,9 +48,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FluentNHibernate, Version=1.3.0.727, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\FluentNHibernate.dll</HintPath>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -67,8 +67,8 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.7.4\lib\net40\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="N2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -199,14 +199,8 @@
     <Content Include="Content\slides.min.jquery.js" />
     <Content Include="Dinamico\N2\readme.txt" />
     <Content Include="Dinamico\readme.txt" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Elements.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\fade.png" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\home.png" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Cloudy\Thumbnail.JPG" />
     <Content Include="Dinamico\Themes\COH\Content\bootstrap_params.txt" />
+    <Content Include="Dinamico\Themes\COH\Content\css\bootstrap3.cerulean.min.css" />
     <Content Include="Dinamico\Themes\COH\Content\Features.css" />
     <Content Include="Dinamico\Themes\COH\Content\style.css" />
     <Content Include="Dinamico\Themes\COH\Content\css\bootstrap.css" />
@@ -217,10 +211,6 @@
     <Content Include="Dinamico\Themes\COH\Content\js\bootstrap.min.js" />
     <Content Include="Dinamico\Themes\COH\Scripts\jquery.anythingslider.js" />
     <Content Include="Dinamico\Themes\COH\Scripts\jquery.highlight-3.js" />
-    <Content Include="Dinamico\Themes\Concrete\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Concrete\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Concrete\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Concrete\Thumbnail.JPG" />
     <Content Include="Dinamico\Themes\Dark\Content\Elements.css" />
     <Content Include="Dinamico\Themes\Dark\Content\Layout.css" />
     <Content Include="Dinamico\Themes\Dark\Content\Mood.css" />
@@ -238,21 +228,6 @@
     <Content Include="Dinamico\Themes\Default\Scripts\jquery.highlight-3.js" />
     <Content Include="Dinamico\Themes\Default\Scripts\Site.js" />
     <Content Include="Dinamico\Themes\Default\Thumbnail.JPG" />
-    <Content Include="Dinamico\Themes\Responsive\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Responsive\img\glyphicons-halflings-white.png" />
-    <Content Include="Dinamico\Themes\Responsive\img\glyphicons-halflings.png" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\down.png" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\Elements.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\home.png" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Content\TopNavigation.css" />
-    <Content Include="Dinamico\Themes\Roadwork\Thumbnail.JPG" />
-    <Content Include="Dinamico\Themes\Terracotta\Content\fade.png" />
-    <Content Include="Dinamico\Themes\Terracotta\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Terracotta\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Terracotta\Thumbnail.JPG" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -1047,17 +1022,6 @@
     <Content Include="Dinamico\Themes\COH\Views\ContentPages\News.cshtml" />
     <Content Include="Dinamico\Themes\Web.config.MVC3" />
     <Content Include="Dinamico\Themes\Web.config" />
-    <Content Include="Dinamico\Themes\Terracotta\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Shared\LayoutPartials\TopNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Shared\LayoutPartials\Logotype.cshtml" />
-    <Content Include="Dinamico\Themes\Roadwork\Views\Shared\LayoutPartials\Footer.cshtml" />
-    <Content Include="Dinamico\Themes\Responsive\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Responsive\Views\Shared\LayoutPartials\Navbar.cshtml" />
-    <Content Include="Dinamico\Themes\Responsive\Views\Shared\_Layout.cshtml" />
-    <Content Include="Dinamico\Themes\Responsive\Views\ContentParts\ThreeColumns.cshtml" />
-    <Content Include="Dinamico\Themes\Responsive\Views\_ViewStart.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\Web.config" />
     <Content Include="Dinamico\Themes\Default\Views\Test\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\StartPage\NotFound.cshtml" />
@@ -1137,14 +1101,6 @@
     <Content Include="Dinamico\Themes\Dark\Views\Web.config" />
     <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\PreContent.cshtml" />
     <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\Header.cshtml" />
-    <Content Include="Dinamico\Themes\Concrete\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Concrete\Views\Shared\LayoutPartials\PreContent.cshtml" />
-    <Content Include="Dinamico\Themes\Concrete\Views\Shared\LayoutPartials\Header.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\TopNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\PreContent.cshtml" />
-    <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\Header.cshtml" />
     <Content Include="Dinamico\Themes\_ViewStart.cshtml" />
     <Content Include="N2\Web.config" />
     <Content Include="N2\Top.master" />
@@ -1174,6 +1130,7 @@
     <Content Include="N2\Content\LinkTracker\UpdateReferencesTo.ashx" />
     <Content Include="N2\Content\Framed.master" />
     <Content Include="N2\Content\Activity\Notify.ashx" />
+    <Content Include="Dinamico\Themes\COH\Views\ContentParts\ImageFloat.cshtml" />
     <None Include="Properties\PublishProfiles\christourhopeseattle.org - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\PublishProfiles\Profile2.pubxml" />

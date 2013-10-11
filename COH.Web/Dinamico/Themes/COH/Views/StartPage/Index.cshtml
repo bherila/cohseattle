@@ -4,7 +4,7 @@
 {
     <!-- hero unit -->
     <div class="row" id="heroUnit">
-        <div class="span12 centered" style="margin: 0;">
+        <div class="col-sm-12 centered" style="margin: 0;">
             @{ Html.DroppableZone("Hero").Render(); }
         </div>
     </div>
@@ -15,11 +15,11 @@
             
 
         <!-- main content-->
-        <div class="span6">
+        <div class="col-sm-6">
             @Content.Render.Tokens("Text").Wrap(@<div id="content">@item.RenderContents()</div>)
             @{ Html.DroppableZone("Body").Render(); }
         </div>
-        <div class="span6">
+        <div class="col-sm-6">
             @{ Html.DroppableZone("Gutter").Render(); }
             @{ Html.DroppableZone("RecursiveGutter").Render(); }
             @{ Html.DroppableZone("GutterBelow").Render(); }
@@ -32,7 +32,7 @@
 
     <!-- footer hero unit -->
     <div class="row">
-        <div class="span12 centered" style="margin: 0;">
+        <div class="col-xs-12 centered" style="margin: 0;">
             @{ Html.DroppableZone("BelowContent").Render(); }
         </div>
     </div>
