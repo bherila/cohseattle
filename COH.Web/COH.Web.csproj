@@ -51,17 +51,9 @@
     <Reference Include="FluentNHibernate">
       <HintPath>..\packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -70,33 +62,25 @@
     <Reference Include="MySql.Data">
       <HintPath>..\packages\MySql.Data.6.7.4\lib\net40\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="N2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="N2, Version=2.6.3.6, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Library.2.5.6.1\lib\N2.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Library.2.6.3.6\lib\net40\N2.dll</HintPath>
     </Reference>
-    <Reference Include="N2.Extensions, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="N2.Extensions, Version=2.6.3.6, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.Extensions.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.6.3.6\lib\N2.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="N2.IoC.Windsor3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="N2.Management, Version=2.6.3.6, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.IoC.Windsor3.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Management.NoZip.2.6.3.6\lib\N2.Management.dll</HintPath>
     </Reference>
-    <Reference Include="N2.Management, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="N2.Razor, Version=2.6.3.6, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.Management.dll</HintPath>
-    </Reference>
-    <Reference Include="N2.Packaging, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.Packaging.dll</HintPath>
-    </Reference>
-    <Reference Include="N2.Razor, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Razor.2.5.6.1\lib\NET40\N2.Razor.dll</HintPath>
+      <HintPath>..\packages\N2CMS.Razor.2.6.3.6\lib\net40\N2.Razor.dll</HintPath>
     </Reference>
     <Reference Include="N2.ReusableParts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\N2CMS.Management.NoZip.2.5.6.1\lib\N2.ReusableParts.dll</HintPath>
+      <HintPath>..\packages\N2CMS.ReusableParts.2.6.3.6\lib\NET40\N2.ReusableParts.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -106,10 +90,6 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -120,25 +100,29 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -151,6 +135,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\CmsConfig.cs" />
     <Compile Include="Dinamico\Controllers\ContentPagesController.cs" />
     <Compile Include="Dinamico\Controllers\ContentPartsController.cs" />
     <Compile Include="Dinamico\Controllers\FallbackController.cs" />
@@ -183,8 +168,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="apple-touch-icon.png" />
-    <Content Include="App_Data\SampleContent.n2.xml.gz.txt" />
     <Content Include="Content\bootstrap\css\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
@@ -199,6 +182,13 @@
     <Content Include="Content\slides.min.jquery.js" />
     <Content Include="Dinamico\N2\readme.txt" />
     <Content Include="Dinamico\readme.txt" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Content\Elements.css" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Content\fade.png" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Content\home.png" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Content\Layout.css" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Content\Mood.css" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Content\Site.css" />
+    <Content Include="Dinamico\Themes\Cloudy\Thumbnail.JPG" />
     <Content Include="Dinamico\Themes\COH\Content\bootstrap_params.txt" />
     <Content Include="Dinamico\Themes\COH\Content\css\bootstrap3.cerulean.min.css" />
     <Content Include="Dinamico\Themes\COH\Content\Features.css" />
@@ -211,24 +201,48 @@
     <Content Include="Dinamico\Themes\COH\Content\js\bootstrap.min.js" />
     <Content Include="Dinamico\Themes\COH\Scripts\jquery.anythingslider.js" />
     <Content Include="Dinamico\Themes\COH\Scripts\jquery.highlight-3.js" />
-    <Content Include="Dinamico\Themes\Dark\Content\Elements.css" />
-    <Content Include="Dinamico\Themes\Dark\Content\Layout.css" />
-    <Content Include="Dinamico\Themes\Dark\Content\Mood.css" />
-    <Content Include="Dinamico\Themes\Dark\Content\Site.css" />
+    <Content Include="Dinamico\Themes\Concrete\bak\Content\Layout.css" />
+    <Content Include="Dinamico\Themes\Concrete\bak\Content\Mood.css" />
+    <Content Include="Dinamico\Themes\Concrete\bak\Content\Site.css" />
+    <Content Include="Dinamico\Themes\Concrete\Thumbnail.JPG" />
+    <Content Include="Dinamico\Themes\Dark\bak\Content\Elements.css" />
+    <Content Include="Dinamico\Themes\Dark\bak\Content\Layout.css" />
+    <Content Include="Dinamico\Themes\Dark\bak\Content\Mood.css" />
+    <Content Include="Dinamico\Themes\Dark\bak\Content\Site.css" />
     <Content Include="Dinamico\Themes\Dark\Thumbnail.JPG" />
-    <Content Include="Dinamico\Themes\Default\Content\Boilerfoot.css" />
-    <Content Include="Dinamico\Themes\Default\Content\Boilerhead.css" />
     <Content Include="Dinamico\Themes\Default\Content\Elements.css" />
     <Content Include="Dinamico\Themes\Default\Content\Features.css" />
     <Content Include="Dinamico\Themes\Default\Content\IE.css" />
     <Content Include="Dinamico\Themes\Default\Content\Layout.css" />
     <Content Include="Dinamico\Themes\Default\Content\Mood.css" />
     <Content Include="Dinamico\Themes\Default\Content\Site.css" />
-    <Content Include="Dinamico\Themes\Default\Scripts\jquery.anythingslider.js" />
-    <Content Include="Dinamico\Themes\Default\Scripts\jquery.highlight-3.js" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\css\bootstrap-theme.css" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\css\bootstrap-theme.min.css" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\css\bootstrap.css" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\css\bootstrap.min.css" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\js\bootstrap.js" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\js\bootstrap.min.js" />
+    <Content Include="Dinamico\Themes\Default\lib\jquery\jquery-1.10.2.js" />
+    <Content Include="Dinamico\Themes\Default\lib\jquery\jquery-1.10.2.min.js" />
+    <Content Include="Dinamico\Themes\Default\lib\jquery\jquery.highlight-3.js" />
     <Content Include="Dinamico\Themes\Default\Scripts\Site.js" />
     <Content Include="Dinamico\Themes\Default\Thumbnail.JPG" />
-    <Content Include="favicon.ico" />
+    <Content Include="Dinamico\Themes\Responsive\bak\Content\Site.css" />
+    <Content Include="Dinamico\Themes\Responsive\bak\img\glyphicons-halflings-white.png" />
+    <Content Include="Dinamico\Themes\Responsive\bak\img\glyphicons-halflings.png" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Content\down.png" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Content\Elements.css" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Content\home.png" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Content\Layout.css" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Content\Mood.css" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Content\Site.css" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Content\TopNavigation.css" />
+    <Content Include="Dinamico\Themes\Roadwork\Thumbnail.JPG" />
+    <Content Include="Dinamico\Themes\Terracotta\bak\Content\fade.png" />
+    <Content Include="Dinamico\Themes\Terracotta\bak\Content\Mood.css" />
+    <Content Include="Dinamico\Themes\Terracotta\bak\Content\Site.css" />
+    <Content Include="Dinamico\Themes\Terracotta\Thumbnail.JPG" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\jquery-ui.css" />
@@ -263,11 +277,14 @@
     <Content Include="N2\App\Partials\ContentVersions.html" />
     <Content Include="N2\App\Partials\Footer.html" />
     <Content Include="N2\App\Partials\FrameAction.html" />
+    <Content Include="N2\App\Partials\Framework.html" />
     <Content Include="N2\App\Partials\Loading.html" />
     <Content Include="N2\App\Partials\Main.html" />
     <Content Include="N2\App\Partials\Management.html" />
+    <Content Include="N2\App\Partials\ManagementConfirm.html" />
     <Content Include="N2\App\Partials\Menu.html" />
     <Content Include="N2\App\Partials\MenuNode.html" />
+    <Content Include="N2\App\Partials\MenuNodeLastChild.html" />
     <Content Include="N2\App\Partials\MenuSubNode.html" />
     <Content Include="N2\Content\Activity\RecentActivity.ascx" />
     <Content Include="N2\Content\AffectedItems.ascx" />
@@ -328,13 +345,13 @@
     <Content Include="N2\Files\Js\jquery.MultiFile.js" />
     <Content Include="N2\Files\Rebuild.aspx" />
     <Content Include="N2\Installation\Begin\Default.aspx" />
-    <Content Include="N2\Installation\dbmigrator.aspx" />
     <Content Include="N2\Installation\Default.aspx" />
     <Content Include="N2\Installation\Diagnose.aspx" />
     <Content Include="N2\Installation\Fix.aspx" />
     <Content Include="N2\Installation\FixClass.aspx" />
     <Content Include="N2\Installation\mysql.upgrade.2.sql" />
     <Content Include="N2\Installation\Rebase.aspx" />
+    <Content Include="N2\Installation\Relations.aspx" />
     <Content Include="N2\Installation\Upgrade.aspx" />
     <Content Include="N2\Installation\UpgradeVersions.aspx" />
     <Content Include="N2\Login.aspx" />
@@ -348,286 +365,24 @@
     <Content Include="N2\Myself\Analytics\Views\ManageAnalytics\InputToken.ascx" />
     <Content Include="N2\Myself\Analytics\Views\ManageAnalytics\SelectAccount.ascx" />
     <Content Include="N2\Myself\Analytics\Views\ManageAnalytics\Statistics.ascx" />
+    <Content Include="N2\Myself\EditPassword.aspx" />
     <Content Include="N2\Myself\Languages.ascx" />
     <Content Include="N2\Myself\Root.aspx" />
     <Content Include="N2\Myself\Statistics.ascx" />
     <Content Include="N2\Myself\Wizards.ascx" />
-    <Content Include="N2\Resources\angular-1.1.5\angular-resource.min.js" />
-    <Content Include="N2\Resources\angular-1.1.5\angular.min.js" />
-    <Content Include="N2\Resources\angular-1.1.5\i18n\angular-locale_en.js" />
-    <Content Include="N2\Resources\angular-1.1.5\version.txt" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui-ieshiv.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui-ieshiv.min.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui.css" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui.min.css" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\angular-ui.min.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\common\ieshiv\ieshiv.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\common\module.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\grunt.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\animate\animate.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\calendar\calendar.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\codemirror\codemirror.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\currency\currency.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\date\date.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\event\event.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\if\if.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\jq\jq.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\keypress\keypress.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\map\map.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\mask\mask.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\reset\reset.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\route\route.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\scrollfix\scrollfix.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\select2\select2.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\showhide\showhide.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\sortable\sortable.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\tinymce\tinymce.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\directives\validate\validate.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\filters\format\format.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\filters\highlight\highlight.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\filters\inflector\inflector.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\modules\filters\unique\unique.js" />
-    <Content Include="N2\Resources\angular-ui-0.4.0\templates\template.js" />
-    <Content Include="N2\Resources\bootstrap-components\angular-strap.min.js" />
     <Content Include="N2\Resources\bootstrap-components\bootstrap-datepicker.css" />
     <Content Include="N2\Resources\bootstrap-components\bootstrap-datepicker.js" />
     <Content Include="N2\Resources\bootstrap-components\bootstrap-timepicker.css" />
     <Content Include="N2\Resources\bootstrap-components\bootstrap-timepicker.js" />
-    <Content Include="N2\Resources\bootstrap\css\bootstrap.min.css" />
-    <Content Include="N2\Resources\bootstrap\img\glyphicons-halflings-white.png" />
-    <Content Include="N2\Resources\bootstrap\img\glyphicons-halflings.png" />
-    <Content Include="N2\Resources\bootstrap\js\bootstrap.min.js" />
-    <Content Include="N2\Resources\ckeditor\build-config.js" />
-    <Content Include="N2\Resources\ckeditor\ckeditor.js" />
+    <Content Include="N2\Resources\chosen_v1.1.0\chosen-sprite%402x.png" />
+    <Content Include="N2\Resources\chosen_v1.1.0\chosen-sprite.png" />
+    <Content Include="N2\Resources\chosen_v1.1.0\chosen.css" />
+    <Content Include="N2\Resources\chosen_v1.1.0\chosen.jquery.js" />
+    <Content Include="N2\Resources\chosen_v1.1.0\chosen.jquery.min.js" />
+    <Content Include="N2\Resources\chosen_v1.1.0\chosen.min.css" />
+    <Content Include="N2\Resources\chosen_v1.1.0\index.html" />
+    <Content Include="N2\Resources\chosen_v1.1.0\options.html" />
     <Content Include="N2\Resources\ckeditor\config.js" />
-    <Content Include="N2\Resources\ckeditor\contents.css" />
-    <Content Include="N2\Resources\ckeditor\lang\en.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
-    <Content Include="N2\Resources\ckeditor\plugins\about\dialogs\about.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\clipboard\dialogs\paste.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\css\codemirror.ckeditor.css" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\css\codemirror.min.css" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\icons\AutoFormat.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\icons\CommentSelectedRange.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\icons\UncommentSelectedRange.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\dialog\dialog.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\edit\closebrackets.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\edit\closetag.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\edit\continuelist.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\edit\matchbrackets.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\foldcode\foldcode.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\format\autoFormatAll.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\format\formatting.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\search\match-highlighter.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\search\search.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\addon\search\searchcursor.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\codemirror.addons.min.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\codemirror.min.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\codemirror.modes.min.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\codemirror.search-addons.min.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\mode\css.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\mode\htmlmixed.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\mode\javascript.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\js\mode\xml.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\lang\en.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\codemirror\plugin.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\dialog\dialogDefinition.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\div\dialogs\div.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\fakeobjects\images\spacer.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\filebrowser\plugin.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\find\dialogs\find.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\flash\dialogs\flash.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\flash\images\placeholder.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\button.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\checkbox.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\form.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\radio.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\select.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\textarea.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\forms\dialogs\textfield.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\forms\images\hiddenfield.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\icons.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\iframe\dialogs\iframe.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\iframe\images\placeholder.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\image\dialogs\image.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\image\images\noimage.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\link\dialogs\anchor.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\link\dialogs\link.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\link\images\anchor.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\magicline\images\icon.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\pastefromword\filter\default.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\preview\preview.html" />
-    <Content Include="N2\Resources\ckeditor\plugins\scayt\dialogs\options.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\scayt\dialogs\toolbar.css" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_address.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_blockquote.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_div.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h1.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h2.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h3.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h4.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h5.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_h6.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_p.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\showblocks\images\block_pre.png" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\dialogs\smiley.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\angel_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\angry_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\broken_heart.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\confused_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\cry_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\devil_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\envelope.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\heart.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\kiss.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\lightbulb.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\omg_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\regular_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\sad_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\shades_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\teeth_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\thumbs_down.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\thumbs_up.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\tongue_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\tounge_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\smiley\images\wink_smile.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
-    <Content Include="N2\Resources\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\table\dialogs\table.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\templates\dialogs\templates.css" />
-    <Content Include="N2\Resources\ckeditor\plugins\templates\dialogs\templates.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\templates\templates\default.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\templates\templates\images\template1.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\templates\templates\images\template2.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\templates\templates\images\template3.gif" />
-    <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\ciframe.html" />
-    <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\tmp.html" />
-    <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
-    <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\wsc.css" />
-    <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\wsc.js" />
-    <Content Include="N2\Resources\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\dialog.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\dialog_ie.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\dialog_ie7.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\dialog_ie8.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\dialog_iequirks.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\dialog_opera.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\editor.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\editor_gecko.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\editor_ie.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\editor_ie7.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\editor_ie8.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\editor_iequirks.css" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\icons.png" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\images\arrow.png" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\images\close.png" />
-    <Content Include="N2\Resources\ckeditor\skins\moono\images\mini.png" />
-    <Content Include="N2\Resources\ckeditor\styles.js" />
     <Content Include="N2\Resources\Css\all.css" />
     <Content Include="N2\Resources\Css\default.css" />
     <Content Include="N2\Resources\Css\edit.css" />
@@ -664,24 +419,6 @@
     <Content Include="N2\Resources\Css\themes\icms.css" />
     <Content Include="N2\Resources\Css\themes\ink.css" />
     <Content Include="N2\Resources\Css\tree.css" />
-    <Content Include="N2\Resources\fancybox\blank.gif" />
-    <Content Include="N2\Resources\fancybox\fancybox_loading%402x.gif" />
-    <Content Include="N2\Resources\fancybox\fancybox_loading.gif" />
-    <Content Include="N2\Resources\fancybox\fancybox_overlay.png" />
-    <Content Include="N2\Resources\fancybox\fancybox_sprite%402x.png" />
-    <Content Include="N2\Resources\fancybox\fancybox_sprite.png" />
-    <Content Include="N2\Resources\fancybox\helpers\fancybox_buttons.png" />
-    <Content Include="N2\Resources\fancybox\helpers\jquery.fancybox-buttons.css" />
-    <Content Include="N2\Resources\fancybox\helpers\jquery.fancybox-buttons.js" />
-    <Content Include="N2\Resources\fancybox\helpers\jquery.fancybox-media.js" />
-    <Content Include="N2\Resources\fancybox\helpers\jquery.fancybox-thumbs.css" />
-    <Content Include="N2\Resources\fancybox\helpers\jquery.fancybox-thumbs.js" />
-    <Content Include="N2\Resources\fancybox\jquery.fancybox.css" />
-    <Content Include="N2\Resources\fancybox\jquery.fancybox.js" />
-    <Content Include="N2\Resources\fancybox\jquery.fancybox.pack.js" />
-    <Content Include="N2\Resources\font-awesome\css\font-awesome-ie7.min.css" />
-    <Content Include="N2\Resources\font-awesome\css\font-awesome.min.css" />
-    <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.svg" />
     <Content Include="N2\Resources\icons\default.html" />
     <Content Include="N2\Resources\icons\flags.css" />
     <Content Include="N2\Resources\icons\flags.png" />
@@ -774,30 +511,12 @@
     <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\jquery.iframe-transport.js" />
     <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\main.js" />
     <Content Include="N2\Resources\jQuery-File-Upload-8.5.0\js\vendor\jquery.ui.widget.js" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\animated-overlay.gif" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_222222_256x240.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_454545_256x240.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_888888_256x240.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\css\smoothness\jquery-ui-1.10.2.custom.min.css" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\index.html" />
-    <Content Include="N2\Resources\jquery-ui-1.10.2.custom\js\jquery-ui-1.10.2.custom.min.js" />
     <Content Include="N2\Resources\Js\ContextMenu.js" />
     <Content Include="N2\Resources\Js\EditableTags.js" />
     <Content Include="N2\Resources\Js\frameInteraction.js" />
-    <Content Include="N2\Resources\Js\jquery-1.10.2.min.js" />
+    <Content Include="N2\Resources\Js\jquery-1.11.0.js" />
+    <Content Include="N2\Resources\Js\jquery-1.11.0.min.js" />
     <Content Include="N2\Resources\Js\jquery.editableThemeSelection.js" />
-    <Content Include="N2\Resources\Js\jquery.multiselect.filter.js" />
-    <Content Include="N2\Resources\Js\jquery.multiselect.js" />
     <Content Include="N2\Resources\Js\less-1.4.1.min.js" />
     <Content Include="N2\Resources\Js\n2.js" />
     <Content Include="N2\Resources\Js\parts.js" />
@@ -867,6 +586,9 @@
     <Content Include="N2\Resources\syntaxhighlighter\styles\shCore.css" />
     <Content Include="N2\Resources\syntaxhighlighter\styles\shCoreDefault.css" />
     <Content Include="N2\Resources\syntaxhighlighter\styles\shThemeDefault.css" />
+    <Content Include="N2\Roles\Edit.aspx" />
+    <Content Include="N2\Roles\New.aspx" />
+    <Content Include="N2\Roles\Roles.aspx" />
     <Content Include="N2\Search\ManageIndex.ascx" />
     <Content Include="N2\Tokens\TokenTemplates\Author.ascx" />
     <Content Include="N2\Tokens\TokenTemplates\Breadcrumb.ascx" />
@@ -895,7 +617,6 @@
     <Content Include="N2\Tokens\TokenTemplates\SyntaxHighlighter.ascx" />
     <Content Include="N2\Tokens\TokenTemplates\TOC.ascx" />
     <Content Include="N2\Users\Activity.aspx" />
-    <Content Include="N2\Users\Css\Membership.css" />
     <Content Include="N2\Users\Edit.aspx" />
     <Content Include="N2\Users\New.aspx" />
     <Content Include="N2\Users\Password.aspx" />
@@ -957,11 +678,46 @@
     <Content Include="Dinamico\Themes\COH\Views\Link\Index.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Shared\_RightNavShared.cshtml" />
     <Content Include="Dinamico\Themes\COH\Views\Slideshow\Index.cshtml" />
-    <Content Include="App_Data\SampleContent.n2.xml.gz" />
     <None Include="Content\flexslider.readme.md" />
     <Content Include="Dinamico\Themes\COH\Views\ContentPages\News.cshtml" />
-    <Content Include="Dinamico\Themes\Web.config.MVC3" />
+    <Content Include="N2\Web.config" />
+    <Content Include="Dinamico\Themes\COH\Views\ContentParts\ImageFloat.cshtml" />
+    <Content Include="N2\Top.master" />
+    <Content Include="N2\Simple.master" />
+    <Content Include="N2\Search\IndexInfo.ashx" />
+    <Content Include="N2\Resources\RedirectHandler.ashx" />
+    <Content Include="N2\Resources\MessageSink.ashx" />
+    <Content Include="N2\Resources\KeepAlive\Ping.ashx" />
+    <Content Include="N2\Resources\Js\tinymce.ashx" />
+    <Content Include="N2\Resources\Js\plugins.ashx" />
+    <Content Include="N2\Resources\Js\jquery.ui.ashx" />
+    <Content Include="N2\Resources\IconHandler.ashx" />
+    <Content Include="N2\Myself\Analytics\Views\Web.config" />
+    <Content Include="N2\log4net.config" />
+    <Content Include="N2\Installation\UpgradeVersion.ashx" />
+    <Content Include="N2\Installation\system.diagnostics.trace.config" />
+    <Content Include="N2\Installation\log4net.config" />
+    <Content Include="N2\Installation\InstallerPage.Master" />
+    <Content Include="N2\Files\Resize.ashx" />
+    <Content Include="N2\Files\FileSystem\UploadFile.ashx" />
+    <Content Include="N2\Content\Navigation\SortUp.ashx" />
+    <Content Include="N2\Content\Navigation\SortDown.ashx" />
+    <Content Include="N2\Content\Navigation\LoadTree.ashx" />
+    <Content Include="N2\Content\LinkTracker\UpdateReferencesTo.ashx" />
+    <Content Include="N2\Content\Framed.master" />
+    <Content Include="N2\Content\Activity\Notify.ashx" />
     <Content Include="Dinamico\Themes\Web.config" />
+    <Content Include="Dinamico\Themes\Terracotta\bak\Views\Web.config" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Views\Web.config" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Views\Shared\LayoutPartials\TopNavigation.cshtml" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Views\Shared\LayoutPartials\Logotype.cshtml" />
+    <Content Include="Dinamico\Themes\Roadwork\bak\Views\Shared\LayoutPartials\Footer.cshtml" />
+    <Content Include="Dinamico\Themes\Responsive\bak\Views\Web.config" />
+    <Content Include="Dinamico\Themes\Responsive\bak\Views\Shared\LayoutPartials\Navbar.cshtml" />
+    <Content Include="Dinamico\Themes\Responsive\bak\Views\Shared\_Layout.cshtml" />
+    <Content Include="Dinamico\Themes\Responsive\bak\Views\ContentParts\ThreeColumns.cshtml" />
+    <Content Include="Dinamico\Themes\Responsive\bak\Views\_ViewStart.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\Web.config" />
     <Content Include="Dinamico\Themes\Default\Views\Test\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\StartPage\NotFound.cshtml" />
@@ -1038,39 +794,22 @@
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\News.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Index.cshtml" />
     <Content Include="Dinamico\Themes\Default\Views\ContentPages\Container.cshtml" />
-    <Content Include="Dinamico\Themes\Dark\Views\Web.config" />
-    <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\PreContent.cshtml" />
-    <Content Include="Dinamico\Themes\Dark\Views\Shared\LayoutPartials\Header.cshtml" />
+    <Content Include="Dinamico\Themes\Default\lib\jquery\jquery-1.10.2.min.map" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Dinamico\Themes\Default\lib\bootstrap-3.0.3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Dinamico\Themes\Dark\bak\Views\Web.config" />
+    <Content Include="Dinamico\Themes\Dark\bak\Views\Shared\LayoutPartials\PreContent.cshtml" />
+    <Content Include="Dinamico\Themes\Dark\bak\Views\Shared\LayoutPartials\Header.cshtml" />
+    <Content Include="Dinamico\Themes\Concrete\bak\Views\Web.config" />
+    <Content Include="Dinamico\Themes\Concrete\bak\Views\Shared\LayoutPartials\PreContent.cshtml" />
+    <Content Include="Dinamico\Themes\Concrete\bak\Views\Shared\LayoutPartials\Header.cshtml" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Views\Web.config" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Views\Shared\LayoutPartials\TopNavigation.cshtml" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Views\Shared\LayoutPartials\SubNavigation.cshtml" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Views\Shared\LayoutPartials\PreContent.cshtml" />
+    <Content Include="Dinamico\Themes\Cloudy\bak\Views\Shared\LayoutPartials\Header.cshtml" />
     <Content Include="Dinamico\Themes\_ViewStart.cshtml" />
-    <Content Include="N2\Web.config" />
-    <Content Include="N2\Top.master" />
-    <Content Include="N2\Simple.master" />
-    <Content Include="N2\Search\IndexInfo.ashx" />
-    <Content Include="N2\Resources\RedirectHandler.ashx" />
-    <Content Include="N2\Resources\MessageSink.ashx" />
-    <Content Include="N2\Resources\KeepAlive\Ping.ashx" />
-    <Content Include="N2\Resources\Js\tinymce.ashx" />
-    <Content Include="N2\Resources\Js\plugins.ashx" />
-    <Content Include="N2\Resources\Js\jquery.ui.ashx" />
-    <Content Include="N2\Resources\IconHandler.ashx" />
-    <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.woff" />
-    <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.ttf" />
-    <Content Include="N2\Resources\font-awesome\font\fontawesome-webfont.eot" />
-    <Content Include="N2\Resources\font-awesome\font\FontAwesome.otf" />
-    <Content Include="N2\Myself\Analytics\Views\Web.config" />
-    <Content Include="N2\log4net.config" />
-    <Content Include="N2\Installation\UpgradeVersion.ashx" />
-    <Content Include="N2\Installation\system.diagnostics.trace.config" />
-    <Content Include="N2\Installation\log4net.config" />
-    <Content Include="N2\Files\Resize.ashx" />
-    <Content Include="N2\Files\FileSystem\UploadFile.ashx" />
-    <Content Include="N2\Content\Navigation\SortUp.ashx" />
-    <Content Include="N2\Content\Navigation\SortDown.ashx" />
-    <Content Include="N2\Content\Navigation\LoadTree.ashx" />
-    <Content Include="N2\Content\LinkTracker\UpdateReferencesTo.ashx" />
-    <Content Include="N2\Content\Framed.master" />
-    <Content Include="N2\Content\Activity\Notify.ashx" />
-    <Content Include="Dinamico\Themes\COH\Views\ContentParts\ImageFloat.cshtml" />
     <None Include="Properties\PublishProfiles\christourhopeseattle.org - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\PublishProfiles\Profile2.pubxml" />
@@ -1098,64 +837,67 @@
     <Content Include="Template.master" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="N2\App_LocalResources\Login.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Activity\App_LocalResources\Default.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Activity\App_LocalResources\RecentActivity.ascx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\AffectedItems.ascx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\AvailableZones.ascx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\Copy.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\Delete.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\Dependencies.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\Edit.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\EditRecursive.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\Framed.Master.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\ItemInfo.ascx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\Move.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\New.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\Paste.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\App_LocalResources\Toolbar.ascx.resx" />
-    <EmbeddedResource Include="N2\Content\Export\App_LocalResources\Default.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Export\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Export\App_LocalResources\Export.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Export\App_LocalResources\ItemXmlImport.ascx.resx" />
-    <EmbeddedResource Include="N2\Content\Globalization\App_LocalResources\Default.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Globalization\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.resx" />
-    <EmbeddedResource Include="N2\Content\LinkTracker\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\LinkTracker\App_LocalResources\UpdateReferences.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Navigation.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Navigation.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Search.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Search.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Table.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Table.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Security\App_LocalResources\Default.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Security\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Settings\App_LocalResources\Default.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Settings\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Templates\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Trash\App_LocalResources\Default.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Trash\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Versions\App_LocalResources\Default.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Versions\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Content\Versions\App_LocalResources\RecentVersions.ascx.resx" />
-    <EmbeddedResource Include="N2\Content\Wizard\App_LocalResources\Default.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Content\Wizard\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Files\App_LocalResources\Default.aspx.mk.resx" />
-    <EmbeddedResource Include="N2\Files\App_LocalResources\Default.aspx.resx" />
-    <EmbeddedResource Include="N2\Files\FileSystem\App_LocalResources\Directory.aspx.resx" />
-    <EmbeddedResource Include="N2\Files\FileSystem\App_LocalResources\File.aspx.resx" />
-    <EmbeddedResource Include="N2\Files\FileSystem\App_LocalResources\FileUpload.ascx.resx" />
-    <EmbeddedResource Include="N2\Myself\App_LocalResources\Wizards.ascx.resx" />
-    <EmbeddedResource Include="N2\Users\App_LocalResources\Edit.aspx.resx" />
-    <EmbeddedResource Include="N2\Users\App_LocalResources\New.aspx.resx" />
-    <EmbeddedResource Include="N2\Users\App_LocalResources\Users.aspx.resx" />
+    <Content Include="N2\App_LocalResources\Login.aspx.resx" />
+    <Content Include="N2\Content\Activity\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Content\Activity\App_LocalResources\RecentActivity.ascx.resx" />
+    <Content Include="N2\Content\App_LocalResources\AffectedItems.ascx.resx" />
+    <Content Include="N2\Content\App_LocalResources\AvailableZones.ascx.resx" />
+    <Content Include="N2\Content\App_LocalResources\Copy.aspx.resx" />
+    <Content Include="N2\Content\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Content\App_LocalResources\Delete.aspx.resx" />
+    <Content Include="N2\Content\App_LocalResources\Dependencies.aspx.resx" />
+    <Content Include="N2\Content\App_LocalResources\Edit.aspx.resx" />
+    <Content Include="N2\Content\App_LocalResources\EditRecursive.aspx.resx" />
+    <Content Include="N2\Content\App_LocalResources\Framed.Master.resx" />
+    <Content Include="N2\Content\App_LocalResources\ItemInfo.ascx.resx" />
+    <Content Include="N2\Content\App_LocalResources\Move.aspx.resx" />
+    <Content Include="N2\Content\App_LocalResources\New.aspx.resx" />
+    <Content Include="N2\Content\App_LocalResources\Paste.aspx.resx" />
+    <Content Include="N2\Content\App_LocalResources\Toolbar.ascx.resx" />
+    <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Content\Export\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Content\Export\App_LocalResources\Export.aspx.resx" />
+    <Content Include="N2\Content\Export\App_LocalResources\ItemXmlImport.ascx.resx" />
+    <Content Include="N2\Content\Globalization\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Content\Globalization\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.mk.resx" />
+    <Content Include="N2\Content\Globalization\App_LocalResources\Languages.ascx.resx" />
+    <Content Include="N2\Content\LinkTracker\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Content\LinkTracker\App_LocalResources\UpdateReferences.aspx.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Navigation.mk.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Navigation.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.mk.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Search.aspx.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.mk.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Settings.aspx.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.mk.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Table.aspx.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.mk.resx" />
+    <Content Include="N2\Content\Navigation\App_LocalResources\Tree.aspx.resx" />
+    <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Content\Security\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Content\Settings\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Content\Settings\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Content\Templates\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Content\Trash\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Content\Versions\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Content\Versions\App_LocalResources\RecentVersions.ascx.resx" />
+    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Content\Wizard\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Files\App_LocalResources\Default.aspx.mk.resx" />
+    <Content Include="N2\Files\App_LocalResources\Default.aspx.resx" />
+    <Content Include="N2\Files\FileSystem\App_LocalResources\Directory.aspx.resx" />
+    <Content Include="N2\Files\FileSystem\App_LocalResources\File.aspx.resx" />
+    <Content Include="N2\Files\FileSystem\App_LocalResources\FileUpload.ascx.resx" />
+    <Content Include="N2\Myself\App_LocalResources\Wizards.ascx.resx" />
+    <Content Include="N2\Roles\App_LocalResources\Edit.aspx.resx" />
+    <Content Include="N2\Roles\App_LocalResources\New.aspx.resx" />
+    <Content Include="N2\Roles\App_LocalResources\Roles.aspx.resx" />
+    <Content Include="N2\Users\App_LocalResources\Edit.aspx.resx" />
+    <Content Include="N2\Users\App_LocalResources\New.aspx.resx" />
+    <Content Include="N2\Users\App_LocalResources\Users.aspx.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

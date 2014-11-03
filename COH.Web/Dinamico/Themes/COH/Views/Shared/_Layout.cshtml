@@ -13,15 +13,15 @@
 <link rel="shortcut icon" href="@Url.ThemedContent("~/favicon.ico")" />
 <link rel="apple-touch-icon" href="@Url.ThemedContent("~/apple-touch-icon.png")" />
 <link rel="canonical" href="@(Content.Data.Url ?? Request.RawUrl)" />
+@{ Html.Resources().JQuery(); }
 <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-	@*@{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/css/bootstrap.css")); }*@
-	@{ Html.Resources().StyleSheet("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/css/bootstrap.min.css"); }
-	@{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/css/bootstrap3.cerulean.min.css")); }
-	@{ Html.Resources().JavaScript("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"); }
+@*@{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/css/bootstrap.css")); }*@
+@{ Html.Resources().StyleSheet("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/css/bootstrap.min.css"); }
+@{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/css/bootstrap3.cerulean.min.css")); }
+@{ Html.Resources().JavaScript("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"); }
 @{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/style.css")); }
 @{ Html.Resources().StyleSheet(Url.ThemedContent("~/Content/features.css")); }
 <link href="/Content/flexslider.css" rel="stylesheet" type="text/css" />
-@{ Html.Resources().JQuery(); }
 	<style type="text/css">
 		body, html, p, h1, h2, h3, h4, h5, h6, h7 { font-family: Lato; }
 		 .centered { text-align: center; }

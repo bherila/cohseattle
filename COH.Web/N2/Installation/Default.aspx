@@ -1,11 +1,14 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="N2.Edit.Install._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="N2.Edit.Install._Default" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
 	<title>Install N2</title>
-	<link href="../Resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<asp:PlaceHolder runat="server">
+		<link href="<%=  N2.Web.Url.ResolveTokens(N2.Resources.Register.BootstrapCssPath) %>" type="text/css" rel="stylesheet" />
+		<script src="<%= N2.Web.Url.ResolveTokens(N2.Resources.Register.BootstrapJsPath)  %>" type="text/javascript"></script>
+	</asp:PlaceHolder>
 	<link rel="stylesheet" type="text/css" href="../Resources/Css/all.css" />
 	<link rel="stylesheet" type="text/css" href="../Resources/Css/framed.css" />
 	<link rel="stylesheet" type="text/css" href="../Resources/Css/themes/default.css" />
@@ -22,7 +25,7 @@
 	<script type="text/javascript">
 		function show(id) {
 			var el = document.getElementById(id);
-			if (!el) return;
+			if (!el) return false;
 			el.style.display = "block";
 			this.style.display = "none";
 			return false;
@@ -60,7 +63,7 @@
 						<p class="warning"><b>Advice: </b>Go back and check database connection. </p>
 					</asp:Literal>
 					<p>
-						Please review the following SQL script carefully before creating tables.
+						Please review the following database installation script carefully before creating tables.
 						<asp:Literal ID="Literal1" runat="server" Visible="<%# Status.HasSchema %>">
 							<span class="warning">Creating tables will destroy any existing content.</span>
 						</asp:Literal>
