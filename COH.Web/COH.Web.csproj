@@ -621,6 +621,9 @@
     <Content Include="N2\Users\New.aspx" />
     <Content Include="N2\Users\Password.aspx" />
     <Content Include="N2\Users\Users.aspx" />
+    <Content Include="sitemap.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="static\bootstrap\css\bootstrap-responsive.css" />
     <Content Include="static\bootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="static\bootstrap\css\bootstrap.css" />
