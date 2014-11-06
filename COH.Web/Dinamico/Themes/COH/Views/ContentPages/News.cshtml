@@ -43,14 +43,17 @@
 			@{ Html.DroppableZone("RecursiveGutter").Render(); }
 
 			<h1>Read more</h1>
-			@Html.Raw(new MenuPartRenderer(new MenuPart()
+			@foreach (var item in Content.Current.Item.Parent.GetChildPagesUnfiltered().OrderByDescending(item => item.Published))
 			{
-				MenuStartFromLevel = 5,
-				MenuShowSibilings = MenuPartBase.SibilingDisplayOptions.Always,
-				MenuNumChildLevels = 1,
-				MenuFlattenTopLevel = true,
-				MenuDontLinkTopLevel = true
-			}).GetHtml())
+				if (item.ID == Content.Current.Item.ID)
+				{
+					<p style="line-height: 100%; font-weight: bold;">&raquo; @item.Title<br /><small class="disabled">@String.Format("published {0:M/d/yyyy}", item.Published) </small></p>
+				}
+				else
+				{
+					<p style="line-height: 100%;"><a href="@item.Url">@item.Title</a><br /><small class="disabled">@String.Format("published {0:M/d/yyyy}", item.Published) </small></p>
+				}
+			}
 
 			@{ Html.DroppableZone("GutterBelow").Render(); }
 		</div>
