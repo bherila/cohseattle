@@ -29,6 +29,8 @@
     <BaseIntermediateOutputPath>c:\tmp\cohweb.obj</BaseIntermediateOutputPath>
     <includesetaclproviderondestination>False</includesetaclproviderondestination>
     <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -813,10 +815,7 @@
     <Content Include="Dinamico\Themes\Cloudy\bak\Views\Shared\LayoutPartials\PreContent.cshtml" />
     <Content Include="Dinamico\Themes\Cloudy\bak\Views\Shared\LayoutPartials\Header.cshtml" />
     <Content Include="Dinamico\Themes\_ViewStart.cshtml" />
-    <None Include="Properties\PublishProfiles\christourhopeseattle.org - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
-    <None Include="Properties\PublishProfiles\Profile2.pubxml" />
-    <None Include="Properties\PublishProfiles\Profile3.pubxml" />
+    <None Include="Properties\PublishProfiles\ChristOurHope - Web Deploy.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
